@@ -1,0 +1,196 @@
+body{
+    font-family: sans-serif;
+}
+hr{
+    border-color: turquoise;
+}
+.header{
+    background-image: linear-gradient(rgba(51,181,83,0.991) 30.48%, rgba(0, 153, 153,0.6) 73.52%), url('../img/img1.jpg') ;
+    background-size: cover;
+    height: 100%;
+    width: 100% ;
+    text-align: center;
+}
+.header__trademark{
+    background: rgb(51,181,83);
+    margin-bottom: 10px;
+    padding: 15px;
+}
+.header__presentation *{
+    color: white;
+}
+.header__presentation p{
+    font-size:small;
+    line-height: 1;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.header__presentation{
+    margin-top: 2.5%;
+    margin-bottom: 210px;
+}
+.button{
+    text-decoration: none;
+    padding: 3px 10px;
+    font-size: 19px;
+    color: white;
+    background-color: rgba(50,205,50,0);
+    border-radius: 25px;
+    border: 2px solid white;
+    margin-bottom: 5%;
+}
+.badge{
+    margin-top: 2.5%;
+    text-align: center;
+}
+.badge__text h2{
+     color: dodgerblue;
+     margin-bottom: 3%;
+}
+.badge__text p{
+    font-size:small;
+    line-height: 1;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.gridContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5% 7%;
+}
+.gridContainer__insignia{
+    width: 17.5%;
+    text-align: center;
+    flex-grow: 4;
+}
+.gridContainer__insignia figcaption{
+    margin-top: 20%;
+    font-size:small;
+}
+.tradeMarks{
+    margin-bottom: 5%;
+}
+.gridContainerMarks{
+    margin-right: 0;
+    margin-left: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size:small;
+}
+
+.gridContainerMarks__banner{
+    background: linear-gradient(to right,rgba(51,181,83,0.991) 30.48%, rgba(0, 153, 153,0.6) 73.52%);
+    padding-left: 40%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.gridContainerMarks__banner1{
+    background: linear-gradient(to left,rgba(51,181,83,0.991) 30.48%, rgba(0, 153, 153,0.6) 73.52%);
+    padding: 40px 40% 40px 60px;
+}
+.gridContainerMarks-textBanner{
+    background: lightgray;
+     padding: 30px 25% 30px 30px;
+    text-align: justify;
+    font-size:small;
+}
+.gridContainerMarks-textBanner1{
+    background: lightgray;
+    padding: 30px 30px 30px 25%;
+    text-align: justify;
+    font-size:small;
+}
+.reasons{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.reasons__seven{
+    font-size: 80vw;
+    position: relative;
+    top: -95.5vw;
+    left: 1%;
+    height: 0;
+}
+.reasons__seven p{
+    background: linear-gradient(to right,rgba(51,181,83,0.991) 30.48%, rgba(0, 153, 153,0.6) 55.52%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.reasons__important{
+    padding-left: 2%;
+}
+.reasons__important p{
+    font-size: 11px;
+    text-align: justify;
+}
+.reasons__important h6,h4{
+    color: dodgerblue;
+}
+.form{
+    background: lightgray;
+}
+.form__text{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+.form__text h2{
+    padding-top: 6%;
+    color: dodgerblue;
+}
+.form__text p{
+    font-size: small;
+}
+.form__contact{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+}
+.form__contact-1 input{
+    margin: 5px 10px 5px 0;
+    width: 95.25%;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.form__contact-1 textarea{
+    margin: 5px 10px 5px 0;
+    width: 95.25%;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.form__contact-2 input{
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    width: 46%;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.form__contact-3 input{
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.form__contact-3 #city{
+    width: 46%;
+}
+.form__contact-3 #state{
+    width: 25.5%;
+}
+.form__contact-3 #zip{
+    width: 17%;
+}
+.button-form{
+    color: dodgerblue;
+    border: 2px solid dodgerblue;
+    margin-top: 2%;
+    position: relative;
+    left: 71vw;
+}
