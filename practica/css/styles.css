@@ -81,16 +81,56 @@ hr{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 5% 7%;
+    width: 70%;
+    margin: 11vh auto;
+    
 }
-.gridContainer__insignia{
-    width: 17.5%;
-    text-align: center;
-    flex-grow: 4;
+@media (min-width: 1080px) {
+    .gridContainer__icon{
+        flex: 25%;
+        text-align: center;
+        padding: 3vh;
+        margin: 0;
+    }
 }
-.gridContainer__insignia figcaption{
-    margin-top: 20%;
-    font-size:small;
+@media (max-width: 1080px) {
+    .gridContainer__icon{
+        flex: 50%;
+        text-align: center;
+        padding: 3vh;
+        margin: 0;
+    }
+}
+@media (max-width: 768px) {
+    .gridContainer__icon{
+        flex: 100%;
+        text-align: center;
+        padding: 3vh;
+        margin: 0;
+    }
+}
+.gridContainer__icon img{
+    height: 60px;
+    width: 50px;
+}
+.gridContainer__icon--data{
+    height: 11vh;
+}
+.gridContainer__icon--data h3{
+    color: dodgerblue;
+    height: 0;
+    margin-top: 5vh;
+    font-family: Raleway-Bold;
+}
+.gridContainer__icon--data p{
+    color: dodgerblue;
+    font-size: 13px;
+    font-family: OpenSans;
+}
+.gridContainer__icon p{
+    margin-top: 3vh;
+    font-size: 13px;
+    font-family: OpenSans;
 }
 .tradeMarks{
     margin-bottom: 5%;
