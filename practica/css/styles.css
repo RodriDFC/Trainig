@@ -22,7 +22,7 @@ hr{
     background-image: linear-gradient(rgba(51,181,83,0.991) 30.48%, rgba(0, 153, 153,0.6) 73.52%), url('../img/img1.jpg') ;
     background-size: cover;
     height: 100%;
-    width: 100% ;
+    width: 100%;
     text-align: center;
 }
 .header__trademark{
@@ -47,6 +47,7 @@ hr{
     line-height: 1.5;
     margin-left: 25%;
     margin-right: 25%;
+    color: rgba(255,255,255,0.87);
 }
 .header__presentation{
     margin-top: 2.5%;
@@ -155,12 +156,22 @@ hr{
         background: linear-gradient(to right,rgba(51,181,83,0.991) 55.48%, rgba(0, 153, 153,0.6) 73.52%);
         flex: 50%;
         height: 23vw;
+        position: relative;
+    }
+    .gridContainerMarks__banner:before{
+        border-left: 2.5vw solid rgb(100, 196, 196);
+        border-top: 3vw solid transparent;
+        border-bottom: 3vw solid transparent;
+        content: "";
+        position: absolute;
+        top: 8.3vw;
+        left: 49.045vw;
     }
     .gridContainerMarks__banner img{
         width: 18vw;
         height: 6vw;
         position: relative;
-        top: 7vw;
+        top: 8vw;
         left: 25vw;
     }
     .gridContainerMarks__textBanner{
@@ -169,7 +180,7 @@ hr{
         height: 23vw;
     }
     .gridContainerMarks__textBanner p{
-        width: 65%;
+        width: 59%;
         margin: 3vw auto 3vw 5vw;
         text-align: justify;
         font-family: OpenSans;
@@ -179,12 +190,22 @@ hr{
         background: linear-gradient(to left,rgba(51,181,83,0.991) 55.48%, rgba(0, 153, 153,0.6) 73.52%);
         flex: 50%;
         height: 23vw;
+        position: relative;
+    }
+    .gridContainerMarks__banner1:before{
+        content: "";
+        position: absolute;
+        right: 49.05vw;
+        top: 8.3vw;
+        border-right: 2.5vw solid rgb(100, 196, 196);
+        border-top: 3vw solid transparent;
+        border-bottom: 3vw solid transparent;
     }
     .gridContainerMarks__banner1 img{
         width: 18vw;
         height: 10vw;
         position: relative;
-        top: 5vw;
+        top: 7vw;
         left: 8vw;
     }
     .gridContainerMarks__textBanner1{
@@ -193,7 +214,7 @@ hr{
         height: 23vw;
     }
     .gridContainerMarks__textBanner1 p{
-        width: 68%;
+        width: 59%;
         margin: 3vw 5vw 3vw auto;
         text-align: justify;
         font-family: OpenSans;
@@ -330,7 +351,9 @@ hr{
 }
 .form__contact{
     width: 70%;
-    margin: 2vw auto 3vw auto;
+    margin: 2vw auto 0 auto;
+    font-family: OpenSans;
+    font-size: small;
 }
 .form__contact-1{
     display: flex;
@@ -381,10 +404,11 @@ hr{
     flex: 17%;
 }
 .form__contact--boton{
-
+text-align: end;
 }
 .button-form{
     color: dodgerblue;
     border: 2px solid dodgerblue;
     margin-top: 2%;
+    padding: 13px 45px;
 }
