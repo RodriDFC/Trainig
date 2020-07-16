@@ -251,95 +251,140 @@ hr{
     }
 }
 .reasons{
-    margin-left: 10%;
-    margin-right: 10%;
-    display: grid;
-    grid-template-columns: auto auto;
+    margin: 5vw auto;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
 }
-.reasons__seven{
-    font-size: 80vw;
-    position: relative;
-    top: -95.5vw;
-    left: 1%;
-    height: 0;
+@media (min-width: 768px) {
+    .reasons__seven{
+        flex: 50%;
+        font-size: 60vw;
+        position: relative;
+        bottom: 15.2vw;
+        right: 2vw;
+        width: 0;
+        height: 0;
+        padding: 0;
+        font-family: "Arial Black";
+    }
+    .reasons__important{
+        flex: 50%;
+        width: 50%;
+        padding-left: 2%;
+    }
+    .reasons__important p{
+        font-size: 11px;
+        text-align: justify;
+        margin-bottom: 1.5vw ;
+        font-family: OpenSans;
+    }
+}
+@media (max-width: 768px) {
+    .reasons__seven{
+        flex: 100%;
+        font-size: 10vw;
+        position: relative;
+        text-align: center;
+        font-family: "Arial Black";
+    }
+    .reasons__important{
+        flex: 100%;
+        padding-left: 2%;
+    }
+    .reasons__important p{
+        font-size: 13px;
+        text-align: justify;
+        margin-bottom: 1.5vw ;
+        font-family: OpenSans;
+    }
 }
 .reasons__seven p{
     background: linear-gradient(to right,rgba(51,181,83,0.991) 30.48%, rgba(0, 153, 153,0.6) 55.52%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.reasons__important{
-    padding-left: 2%;
-}
-.reasons__important p{
-    font-size: 11px;
-    text-align: justify;
-}
 .reasons__important h6,h4{
     color: dodgerblue;
+    font-family: Raleway-Bold;
+}
+.reasons__important h4{
+    margin-bottom: 1.7vw;
 }
 .form{
     background: lightgray;
 }
 .form__text{
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
+    width: 70%;
+    margin: 5vw auto 0 auto;
 }
 .form__text h2{
     padding-top: 6%;
     color: dodgerblue;
+    font-family: Raleway-Bold;
 }
 .form__text p{
-    font-size: small;
+    padding: 10px 0 10px 0;
+    font-family: OpenSans;
 }
 .form__contact{
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 2%;
+    width: 70%;
+    margin: 2vw auto 3vw auto;
+}
+.form__contact-1{
+    display: flex;
+    flex-wrap: wrap;
 }
 .form__contact-1 input{
-    margin: 5px 10px 5px 0;
-    width: 95.25%;
+    flex: 100%;
+    margin: 5px 0 5px 0;
     padding: 10px;
     background-color: #fff;
     border: 1px solid #ddd;
 }
 .form__contact-1 textarea{
-    margin: 5px 10px 5px 0;
-    width: 95.25%;
+    margin: 5px 0 5px 0;
+    flex: 100%;
     padding: 10px;
     background-color: #fff;
     border: 1px solid #ddd;
+}
+.form__contact-2{
+    display: flex;
+    flex-wrap: wrap;
 }
 .form__contact-2 input{
-    vertical-align: middle;
-    margin: 5px 10px 5px 0;
-    width: 46%;
+    flex: 50%;
     padding: 10px;
+    margin: 5px 0 5px 0;
     background-color: #fff;
     border: 1px solid #ddd;
 }
+.form__contact-3{
+    display: flex;
+    flex-wrap: wrap;
+}
 .form__contact-3 input{
-    vertical-align: middle;
-    margin: 5px 10px 5px 0;
+    margin: 5px 0 5px 0;
     padding: 10px;
     background-color: #fff;
     border: 1px solid #ddd;
 }
 .form__contact-3 #city{
-    width: 46%;
+    flex: 46%;
 }
 .form__contact-3 #state{
-    width: 25.5%;
+    flex: 25.5%;
 }
 .form__contact-3 #zip{
-    width: 17%;
+    flex: 17%;
+}
+.form__contact--boton{
+
 }
 .button-form{
     color: dodgerblue;
     border: 2px solid dodgerblue;
     margin-top: 2%;
-    position: relative;
-    left: 71vw;
 }
