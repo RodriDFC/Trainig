@@ -301,6 +301,12 @@ hr{
         margin-bottom: 1.5vw ;
         font-family: OpenSans;
     }
+    .reasons__important h4{
+        margin-bottom: 1.7vw;
+        word-spacing: 3px;
+        letter-spacing: 2px;
+        font-size: 1.5vw;
+    }
 }
 @media (max-width: 768px) {
     .reasons__seven{
@@ -320,6 +326,12 @@ hr{
         margin-bottom: 1.5vw ;
         font-family: OpenSans;
     }
+    .reasons__important h4{
+        margin-bottom: 1.7vw;
+        word-spacing: 3px;
+        letter-spacing: 2px;
+        font-size: 2.7vw;
+    }
 }
 .reasons__seven p{
     background: linear-gradient(to right,rgba(51,181,83,0.991) 30.48%, rgba(0, 153, 153,0.6) 55.52%);
@@ -329,9 +341,6 @@ hr{
 .reasons__important h6,h4{
     color: dodgerblue;
     font-family: Raleway-Bold;
-}
-.reasons__important h4{
-    margin-bottom: 1.7vw;
 }
 .form{
     background: lightgray;
