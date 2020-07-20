@@ -1,0 +1,155 @@
+/* Fonts Family */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+/* Base */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: normal;
+    color: #6a707d;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 90px;
+}
+
+h2 {
+    font-size: 62px;
+}
+
+h3 {
+    font-size: 48px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 1em 0;
+}
+/* ---  parte payme ----*/
+/* ---  base ----*/
+.section--payme{    
+    background-image: url('../images/background.png');
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+.section--payme__caseStudy{
+    width: 100%;
+    display: flex;
+    padding-bottom: 6.5vw;
+    flex-wrap: wrap;
+}
+/* -----  large screen     ------*/
+@media (min-width: 950px) {
+    /** --- text -----*/
+    .section--payme__text{
+        padding-top: 9.51vw;
+        flex: 44%;
+    }
+    /** --- images -----*/
+    .section--payme__img-1{
+        margin: 0;
+        padding-top: 6.44vw;
+        flex: 19%;
+    }
+    .section--payme__img-2 {
+        margin: 0;
+        padding-top: 7.7vw;
+        flex: 19%;
+    }
+    .section--payme__img-1 img{
+        margin-left: 5vw;
+        margin-right: 3vw;
+    }
+}
+/*----  small screen -------*/
+@media (max-width: 950px) {
+    /** --- text -----*/
+    .section--payme__text{
+        padding-top: 9.51vw;
+        padding-right: 2%;
+        padding-left: 2%;
+        flex: 100%;
+    }
+    /** --- images -----*/
+    .section--payme__img-1{
+        text-align: center;
+        flex: 30%;
+    }
+    .section--payme__img-2{
+        text-align: center;
+        flex: 30%;
+    }
+}
+/** --- text section--payme__text -----*/
+.section--payme__text h3{
+    padding-bottom: 1.83vw;
+    margin: 0;
+}
+.section--payme__text p{
+    padding-bottom: 5.13vw;
+    font-size: 17px;
+    margin: 0;
+}
+/** --- button -----*/
+.button{
+    text-decoration: none;
+    padding: 13px 26px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(75, 169, 255);
+    border-radius: 25px;
+    border: 2px solid transparent;
+    margin-bottom: 5%;
+    box-shadow: 3px 20px 25px rgba(75, 169, 255, 0.5);
+}
+/** --- images box-shadow-----*/
+.section--payme__img-1 img{
+    box-shadow: 3px 20px 25px rgba(0, 0, 0, 0.5);
+}
+.section--payme__img-2 img{
+    box-shadow: 3px 20px 25px rgba(0, 0, 0, 0.5);
+}
+/** --- menu -----*/
+.section--payme__nav{
+    width: 100%;
+}
+.section--payme__nav ul{
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid white;
+}
+.section--payme__nav li{
+    display: inline-block;
+    padding: 3.3vw 5.4vw 3.3vw 0;
+}
+.section--payme__nav a{
+    text-decoration: none;
+    color: white;
+}
+.section--payme__nav ul li p,h4{
+    margin: 0;
+}
+/** --- menu respinsive -----*/
+@media(max-width: 1050px) {
+   .section--payme__scroll{
+    overflow: auto;
+    white-space: nowrap;
+   }
+}
