@@ -1,0 +1,217 @@
+/* Fonts Family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+/* Base */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    max-width: 1235px;
+    margin: 0 auto;
+    padding: 1em 0;
+}
+/* Header */
+.site--header{
+    background: url("../img/background.png") no-repeat center center fixed;
+    background-size: cover;
+}
+.site--header__logo{
+    margin-left: 30px;
+}
+.site--header__logo p{
+     display: inline-block;
+     margin-left: 10px;
+     font-size: 18px;
+     color: white;
+     letter-spacing: 2px;
+ }
+.site--header__logo img{
+    margin-right: 5px;
+}
+.site--header__tittle{
+    width: 46.9vw;
+    margin: 24.16vw auto 17vw auto;
+}
+.site--header__tittle h1{
+    font-weight: normal;
+    letter-spacing: 5px;
+    font-family: Poppins-regular, sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+.site--header__menu{
+    margin: 1px 12.08vw 1px 12.78vw;
+    width: auto;
+}
+.site--header__menu li{
+    display: inline-block;
+    padding: 1vw 3.1vw 1vw 0;
+}
+.site--header__menu a{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+@media(max-width: 965px) {
+    .site--header__scroll{
+        overflow: auto;
+        white-space: nowrap;
+    }
+}
+/* digital*/
+.section--digital{
+    margin: 7vw 24vw;
+    width: auto;
+    text-align: center;
+}
+.section--digital h2{
+    font-size: 15px;
+    margin-bottom: 3vw;
+    letter-spacing: 3px;
+}
+.section--digital p{
+    font-size: 24px;
+    font-weight: lighter;
+}
+/* ideology */
+.section--ourIdeology{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15vw;
+}
+@media (min-width: 768px) {
+    .section--ourIdeology__figures{
+        flex: 50%;
+    }
+    .section--ourIdeology__learn{
+        margin-top: 8vw;
+        flex: 50%;
+    }
+}
+@media (max-width: 768px) {
+    .section--ourIdeology__figures{
+        margin: 0 30vw;
+        flex: 100%;
+    }
+    .section--ourIdeology__learn{
+        margin: 13vw 10vw 0 10vw;
+        flex: 100%;
+    }
+}
+.section--ourIdeology__figures #layer{
+    opacity: 0.4;
+    position: absolute;
+    top: 11vw;
+    width: 48vw;
+    height: 35vw;
+}
+.section--ourIdeology__figures #rectangle{
+    width: 39vw;
+    height: 39vw;
+}
+.section--ourIdeology__figures h3{
+    font-size: 3vw;
+    width: 26vw;
+    position: absolute;
+    top: 23.5vw;
+    left: 24vw;
+    font-weight: bold;
+}
+.section--ourIdeology__learn h3{
+    font-size: 4.4vw;
+    line-height: 5.15vw;
+}
+.section--ourIdeology__learn h4{
+    font-size: 15px;
+    margin-bottom: 0.5vw;
+}
+.section--ourIdeology__plus{
+    position: absolute;
+    top: 16.5vw;
+    right: 4.5vw;
+    opacity: 0.2;
+}
+@media (max-width: 768px) {
+    .section--ourIdeology__plus{
+        position: absolute;
+        top: 55.5vw;
+        right: 15vw;
+        opacity: 0.5;
+    }
+    .section--ourIdeology__figures h3{
+        font-size: 3vw;
+        width: 26vw;
+        position: absolute;
+        top: 23.5vw;
+        left: 53vw;
+        font-weight: bold;
+    }
+}
+.section--ourIdeology__plus p{
+    font-size: 1.1vw;
+    letter-spacing: 6px;
+}
+/* team */
+.section--team{
+    margin: 1px 7vw 1px 17vw;
+}
+@media (max-width: 768px) {
+    .section--team{
+        margin: 1px 10vw;
+    }
+}
+.section--team h3{
+    font-size: 5.12vw;
+    line-height: 5.15vw;
+}
+.section--team h4{
+    font-size: 1.5vw;
+}
+.section--team__card{
+    margin-top: 4.5vw;
+    display: inline-block;
+    width: 320px;
+    height: 170px;
+}
+.section--team__card:hover{
+    background: rgb(27,241,173);
+    color: white;
+}
+.section--team__card img{
+    margin: 25px 25px;
+    width: 115px;
+    height: 115px;
+}
+.section--team__cardBody{
+    display: inline-block;
+}
+.section--team__cardBody h4{
+    font-size: 16px;
+}
+.section--team__cardBody p{
+    font-size: 15px;
+}
+.section--team__cardBody img{
+    margin: 20px 15px 55px 0;
+    width: 10px;
+    height: 12px;
+}
+.section--team__cards{
+    overflow: auto;
+    white-space: nowrap;
+}
+
+
+
+
