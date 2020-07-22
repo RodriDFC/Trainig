@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Poppins:ital,wght@0,300;0,700;1,400&family=Roboto:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: normal;
+}
+h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 1em 0;
+}
+/**  header  */
+.site--header{
+    background: url("../img/white.png") no-repeat left,
+    url('../img/green.png') no-repeat right;
+    background-size: cover, cover;
+
+}
+.site--header__logo{
+    margin-left: 30px;
+}
+.site--header__logo p{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 21px;
+    color: rgb(130, 244, 211);
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.site--header__tittle{
+    width:  26.35vw;
+    margin: 5vw auto 0 2vw;
+}
+.site--header__tittle h1{
+    font-weight: normal;
+    letter-spacing: 5px;
+    font-size: 8vw;
+    height: 0;
+    margin-bottom: 10vw;
+}
+.site--header__tittle button{
+    font-family: 'Poppins', sans-serif;
+    width: auto;
+    font-size: 3vh;
+}
+.site--header__img{
+    height: 48vw;
+}
+.site--header__img img{
+    position: relative;
+    left: 16.83vw;
+    top: -11.71vw;
+    width: 55vw;
+    height: 56vw;
+}
+@media (min-width: 1088px) {
+    .site--header__ver{
+        transform: rotate(270deg);
+        position: absolute;
+        font-size: 15px;
+        bottom: -8vw;
+        left: -7vw;
+        width: 25%;
+        font-weight: lighter;
+    }
+}
+@media (max-width: 1088px) {
+    .site--header__ver{
+        font-size: 15px;
+        margin-left: 5vw;
+        width: 75%;
+        font-weight: lighter;
+    }
+}
+/**  site--nikeAir **/
+.site--nikeAir{
+    margin-top: 7.32vw;
+}
+.site--nikeAir__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.site--nikeAir__img{
+    background: rgba(0,0,0,0.1);
+    height: 40vw;
+    width: 48vw;
+    flex: 50%;
+    border: 8px solid snow;
+}
+@media (max-width: 768px) {
+    .site--nikeAir__img{
+        background: rgba(0,0,0,0.1);
+        height: 40vw;
+        width: 48vw;
+        flex: 100%;
+        margin: 0 20vw;
+    }
+}
+.site--nikeAir__img img{
+    height: 26.4vw;
+    width: 35vw;
+    margin-left: 3vw;
+    margin-top: 7vw;
+}
+.site--nikeAir__text{
+    flex: 50%;
+    position: relative;
+    top: 15vw;
+    right: 2.9vw;
+}
+@media (max-width: 768px) {
+    .site--nikeAir__text{
+        flex: 100%;
+        margin: 0 13vw;
+        position: relative;
+        height: 40vw;
+        right: 2.9vw;
+    }
+}
+.site--nikeAir__text h2{
+    font-size: 2.7vw;
+    letter-spacing: 2px;
+}
+.site--nikeAir__text p{
+    font-size: 15px;
+    font-weight: lighter;
+}
+.button{
+    padding: 14px 32px;
+    background-color: rgb(130, 244, 211);
+    border: none;
+    font-weight: bold;
+}
+.site--nikeAir__text button{
+    position: relative;
+    left: 36vw;
+    top: 2.5vw;
+}
+/** popular **/
+.section--popular__card{
+    margin-top: 4.5vw;
+    display: inline-block;
+    margin-left: 50px;
+}
+.section--popular__img{
+    background-color: rgb(241, 240, 240);
+    width: 230px;
+    height: 280px;
+    position: relative;
+}
+.section--popular__img img{
+    position: absolute;
+    top: 80px;
+    right: 35px;
+}
+.section--popular__img:hover{
+    background: rgb(130, 244, 211);
+}
+.section--popular__img img:hover{
+   opacity: 0.2;
+}
+.section--popular__cardBody h4{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    margin-right: 23px;
+    margin-bottom: 18px;
+}
+.section--popular__cardBody span{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+}
+.section--popular__cards{
+    overflow: auto;
+    white-space: nowrap;
+}
+.section--popular h2{
+    font-size: 39px;
+    margin-top: 4vw;
+    letter-spacing: 2px;
+}
+@media (max-width: 768px) {
+    .section--popular h2{
+        margin: 4vw 10vw;
+    }
+}
+/*** collection ***/
+.section--collections__text{
+    flex: 50%;
+    margin-top: 11vw;
+}
+@media (max-width: 768px) {
+    .section--collections__text{
+        flex: 100%;
+        margin: 11vw 8vw;
+    }
+}
+.section--collections__text h2{
+    font-size: 35px;
+    margin-bottom: 2.2vw;
+    letter-spacing: 1px;
+}
+.section--collections__text p{
+    font-size: 14px;
+    font-weight: lighter;
+    margin-right: 9vw;
+    margin-bottom: 3.8vw;
+}
+.section--collections__img{
+    flex: 50%;
+}
+.section--collections__img img{
+    height: 35vw;
+    width: 37.4vw;
+    border: 8px solid snow;
+}
+.section--collections{
+    position: relative;
+    margin-top: 8vw;
+}
+.section--collections__img1 img{
+    position: absolute;
+    top: 15vw;
+    right: 4vw;
+    height: 30vw;
+    width: 25vw;
+    z-index: -1;
+}
+@media (max-width: 768px) {
+    .section--collections__img{
+        flex: 100%;
+    }
+    .section--collections__img img{
+        margin: 0 20vw;
+        height: 45vw;
+        width: 42vw;
+        border: 8px solid snow;
+    }
+    .section--collections__img1 img{
+        position: absolute;
+        top: 75vw;
+        right: 24vw;
+        height: 40vw;
+        width: 30vw;
+        z-index: -1;
+    }
+}
+/*** section--thought ***/
+.section--thought{
+    background: rgb(248, 248, 248);
+    margin-top: 15.32vw;
+}
+.section--thought__text{
+    width: auto;
+    margin: 7vw 0;
+    text-align: center;
+}
+.section--thought__text h2{
+    font-size: 42px;
+    font-weight: normal;
+    margin-bottom: 2.5vw;
+}
+.section--thought__text p{
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 2.5vw;
+}
+.section--thought__text #ui{
+    color: rgb(130, 244, 211);
+}
+
