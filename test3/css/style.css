@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(60, 55, 104)
+}
+.container {
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 1em 0;
+}
+.site--header{
+    position: relative;
+    margin-bottom: 50vw;
+}
+.container__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container__col{
+    flex: 50%;
+}
+.site--header__logo ul li{
+    position: absolute;
+    right: 15vw;
+    top: 1vw;
+    display: inline-block;
+}
+.site--header__logo ul li img{
+    width: 5vw;
+    height: 5vw;
+}
+@media (max-width: 808px) {
+    .container__col{
+        flex: 100%;
+    }
+}
+#header1{
+    position: absolute;
+    width: 40.73vw;
+    height: 28.58vw;
+    top: 12vw;
+    right: 16vw;
+}
+#header2{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 67.33vw;
+    height: 35.14vw;
+    z-index: -3;
+}
+#header3{
+    position: absolute;
+    right: 0;
+    top: 5.5vw;
+    width:  49.90vw;
+    height:  28.02vw;
+    opacity: 0.5;
+    z-index: -1;
+}
+#shapeheader1{
+    position: absolute;
+    left: 0;
+    top: 15vw;
+    width: 5.78vw;
+    height: 29.91vw;
+}
+#shapeheader2{
+    position: absolute;
+    right: 2vw;
+    top: 26vw;
+    width: 8vw;
+    height: 8vw;
+}
+#shapeheader3{
+    position: absolute;
+    left: 41vw;
+    top: 14vw;
+    width: 7vw;
+    height: 7vw;
+}
+#shapeheader4{
+    position: absolute;
+    right: 23vw;
+    top: 3vw;
+    width: 30.62vw;
+    height: 16.37vw;
+    z-index: -2;
+}
+#shapeheader5{
+    position: absolute;
+    right: 40.4vw;
+    top: 5vw;
+    width: 7vw;
+    height: 7vw;
+    z-index: -2;
+}
+.site--header__text{
+    position: absolute;
+    top: 11vw;
+    left: 12vw;
+    width: 28%;
+}
+.site--header__text h2{
+    font-size:  3vw;
+}
+.site--header__text p{
+    font-size:  18px;
+    color: rgb(69, 90, 100);
+    margin-bottom: 3vw;
+}
+.site--header__text span{
+    font-size:  20px;
+    color: rgb(69, 90, 100);
+}
+.form{
+    width: 80.92vw;
+    margin-top: 3vw;
+}
+.input{
+    margin: 5px 10px 5px 0;
+    padding: 15px 0;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 18px 35px 0px rgba(250, 120, 117, 0.15);
+}
+.button{
+    border-radius: 5px;
+    border: none;
+    padding: 15px 30px;
+    background-image: -webkit-linear-gradient(left,rgba(60,55,104,0.5) 0%, rgb(250,120,117) 100%);
+    box-shadow: 0px 18px 35px 0px rgba(250, 120, 117, 0.42);
+    color: white;
+}
+@media (max-width: 808px) {
+    .site--header__text{
+        position: absolute;
+        top: 44vw;
+        left: 12vw;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .site--header__text h2{
+        font-size:  4vw;
+    }
+}
+/**  space */
+.section--space{
+    position: relative;
+}
+@media (max-width: 808px) {
+    .section--space{
+        position: relative;
+        margin-top: 90vw;
+        margin-left: 20vw;
+    }
+}
+#spaceShape1{
+    width: 17.13vw;
+    height:  13.4vw;
+    position: absolute;
+    top: 8vw;
+    left: 5vw;
+}
+#spaceShape2{
+    width: 31.53vw;
+    height:  29.55vw;
+    position: absolute;
+    top: 6vw;
+    left: 16vw;
+    z-index: -0;
+}
+#spaceShape3{
+    width: 59.96vw;
+    height: 41.44vw;
+    position: absolute;
+    top: -3vw;
+    left: -15vw;
+    z-index: -2;
+}
+#spaceShape4{
+    width: 40vw;
+    height: 23vw;
+    position: absolute;
+    top: 16vw;
+    left: 5vw;
+    z-index: -1;
+}
+.section--space__text{
+    position: absolute;
+    top: 3vw;
+    right: 12vw;
+    width: 35%;
+    padding: 2vw 5vw;
+    z-index: 1;
+    background: white;
+    opacity: 0.8;
+}
+.section--space__text p{
+    font-size: 16px;
+    color: rgb(69, 90, 100);
+    line-height: 2.219;
+    margin-bottom: 2vw;
+}
+.section--space__text h2{
+    font-size: 32px;
+}
+@media (max-width: 1008px) {
+    .section--space__text{
+        flex: 100%;
+        position: absolute;
+        top: 37vw;
+        left: 0;
+        width: 85%;
+        margin: 0 auto;
+        padding: 1vw 2vw;
+        background: white;
+    }
+}
+.section--space__text a{
+    text-decoration: none;
+    color: rgb(250, 120, 117);
+    font-size: 20px;
+    font-family: "Poppins";
+    display: flex;
+}
+.section--space__text a img{
+    margin-left: 30px;
+    align-items: center;
+}
