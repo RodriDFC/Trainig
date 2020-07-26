@@ -396,12 +396,41 @@ h1, h2, h3, h4, h5, h6 {
     padding-right: 30px;
     text-align: center;
 }
-.section--team__card figure{
+.section--team__img{
     margin: 0;
-    background: black;
+    background: url("../img/team.png");
+    background-size: cover;
+    position: relative;
+    width:330px;
+    height: 327px;
 }
-.section--team__card figure img:hover{
-    opacity: 0.1;
+.section--team__imgContent{
+    background: rgba(0,0,0,0.9);
+    opacity: 0;
+    width:330px;
+    height: 327px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section--team__img:hover .section--team__imgContent{
+    opacity: 1;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    margin: 0 15px 0 0;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle a{
+    text-decoration: none;
+    color: white;
 }
 .section--team__cards{
     overflow: auto;
@@ -446,41 +475,85 @@ h1, h2, h3, h4, h5, h6 {
 /** blog  **/
 .section--blog{
     padding-top: 5.12vw ;
+    padding-bottom: 5vw;
     position: relative;
 }
-.section--blog__img{
-    display: flex;
-    padding: 0 5vw 4.5vw 5vw;
-    flex-wrap: wrap;
-
-}
-.section--blog__img img{
+.section--blog__imgIz img,
+.section--blog__imgDer img{
     width: 35vw;
     height: 20vw;
-    flex: 10%;
 }
-.section--blog__imgText{
-    flex: 50%;
-    width: 30vw;
-    padding-left: 2vw;
+.section--blog__imgDer{
+    padding-left: 5vw;
+    padding-bottom: 3vw;
+    display: flex;
+    flex-flow: row;
 }
-.section--blog__imgText h2{
+.section--blog__imgIz{
+    padding-right: 4vw;
+    padding-bottom: 3vw;
+    display: flex;
+    flex-flow:row-reverse;
+}
+@media(max-width: 768px){
+    .section--blog__imgDer{
+        flex-wrap: wrap;
+    }
+    .section--blog__imgIz{
+        flex-flow:row;
+        flex-wrap: wrap;
+    }
+    .section--blog__imgIz img,
+    .section--blog__imgDer img{
+        width: 50vw;
+        height: 38vw;
+        padding-left: 5vw;
+    }
+}
+.section--blog__imgDerText{
+    padding: 0 0 5vw 7vw;
+}
+.section--blog__imgIzText{
+    text-align: end;
+    padding: 0 7vw 5vw 0;
+}
+.section--blog__imgIzText h4,
+.section--blog__imgDerText h4{
     font-size: 24px;
     color: rgb(33, 33, 33);
+    font-weight: 500;
 }
-.section--blog__imgText p{
+.section--blog__imgIzText p,
+.section--blog__imgDerText p{
     font-size: 16px;
     color: rgb(148, 148, 148);
     line-height: 1.875;
 }
-.section--blog__imgText span{
+.section--blog__imgIzText span,
+.section--blog__imgDerText span{
     font-size: 16px;
     color: rgb(123, 108, 99);
 }
+@media(max-width: 768px){
+    .section--blog__imgDerText{
+        padding: 5vw;
+    }
+    .section--blog__imgIzText{
+        padding: 5vw;
+        text-align: start;
+    }
+}
 .section--blog__sep{
     position: absolute;
-    top: 27%;
+    width: 1.2vw;
+    height: 74.59vw;
+    top: 25%;
     left: 50%;
+}
+@media(max-width: 768px){
+    .section--blog__sep{
+        display: none;
+    }
 }
 .button__blog{
     border-radius: 50%;
@@ -491,4 +564,53 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     left: 49%;
     border: 4px solid lightgray;
+}
+/***   section--contact   ***/
+.section--contact{
+    padding: 5vw 0;
+    background: rgb(245, 245, 245) ;
+}
+.form{
+    width: auto;
+    padding: 2vw 15vw 0 15vw;
+}
+.section--contact__tittle{
+    display: flex;
+    justify-content: center;
+}
+.section--contact__tittle h2{
+    font-size: 40px;
+    color: rgb(123, 108, 99);
+}
+.form__1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.form__1 textarea{
+    padding: 10px;
+    border-top: 3px solid black;
+    border-left: none;
+    border-bottom: 1px solid black;
+    border-right: none;
+    background: rgb(245, 245, 245);
+    flex: 100%;
+    margin: 5px 10px 25px 0;
+}
+.form__2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.form__2 input{
+    padding: 10px;
+    border-top: 3px solid black;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    background: rgb(245, 245, 245);
+    flex: 45%;
+    margin: 5px 10px 5px 0;
+}
+.form__button{
+    display: flex;
+    justify-content: center;
 }
