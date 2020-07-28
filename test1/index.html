@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>Title</title>
 </head>
@@ -22,7 +24,7 @@
             <div class="site--header__menu">
                 <nav>
                     <ul class="site--header__scroll">
-                        <li><a href="">HOME</a></li>
+                        <li><a class="active" href="">HOME</a></li>
                         <li><a href="">ABOUT US</a></li>
                         <li><a href="">WHAT WE DO</a></li>
                         <li><a href="">MEET THE TEAM</a></li>
@@ -43,6 +45,7 @@
         </div>
     </section>
     <section class="section--ourIdeology">
+        <img id="plus1" src="img/plus.png" alt="p">
         <div class="section--ourIdeology__figures">
             <figure>
                 <img id="rectangle" src="img/rectangle.png" alt="rectangle">
@@ -52,9 +55,11 @@
             </figure>
             <h3>Ideas are easy to come by. Execution is really, really hard.</h3>
         </div>
+        <div class="circle1"></div>
+        <div class="circle"></div>
         <div class="section--ourIdeology__learn">
             <h4>OUR IDEOLOGY</h4>
-            <h3>LEARN > EXPERIMENT >  FAIL > LEARN > EXPERIMENT > WIN</h3>
+            <h3>LEARN > EXPERIMENT >  FAIL > LEARN > EXPERIMENT > <span>WIN</span></h3>
             <div class="section--ourIdeology__plus">
                 <p>++++++++++++++++++++++++++++++++++++</p>
                 <p>++++++++++++++++++++++++++++++++++++</p>
@@ -71,8 +76,12 @@
         </div>
     </section>
     <section class="section--team">
-        <h4>MEET THE TEAM</h4>
-        <h3>WE'RE A SMALL TEAM, BUT HAVE A TON OF EXPERIENCE</h3>
+        <div class="circle2"></div>
+        <img id="triangle2" src="img/triangle2.png" alt="t">
+        <div class="section--team__text">
+            <h4>MEET THE TEAM</h4>
+            <h3>WE'RE A SMALL TEAM, BUT HAVE A TON OF EXPERIENCE</h3>
+        </div>
         <div class="container">
             <div class="section--team__cards">
                 <div class="section--team__card">
@@ -108,11 +117,77 @@
         </div>
     </section>
     <section class="section--featured">
+        <img id="plus" src="img/plus.png" alt="p">
+        <img id="triangle1" src="img/triangle1.png" alt="t">
         <div class="container">
-            <h4>OUR FEATURED WORK</h4>
+            <div class="section--featured__tittle">
+                <h4>OUR FEATURED WORK</h4>
+                <h2>WE CREATE ENGAGING EXPERIENCES THROUGH CREATIVITY & CRAFT</h2>
+            </div>
+        </div>
+        <div class="section--featured__images">
+            <div class="slider">
+                <div class="item">
+                    <img src="img/feature1.png" alt="f">
+                    <div>
+                        <h3>Apex Magazine June Issue</h3>
+                        <p>by Fabrizio Morra</p>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <img src="img/feature2.png" alt="f"></div>
+                <div class="item">
+                    <img src="img/feature3.png" alt="f">
+                </div>
+                <div class="item">
+                    <img src="img/feature4.png" alt="f">
+                </div>
+            </div>
         </div>
     </section>
-
-
+    <footer class="site--footer">
+        <div class="container">
+            <div class="site--footer__info">
+                <img id="logo" src="img/footerLogo.png" alt="l">
+                <h2>HAVE A PROJECT? CALL US <span>1.800.987.6321</span></h2>
+                <div>
+                    <a href="#"><img src="img/social1.png" alt="s"></a>
+                    <a href="#"><img src="img/social2.png" alt="s"></a>
+                    <a href="#"><img src="img/social3.png" alt="s"></a>
+                    <a href="#"><img src="img/social4.png" alt="s"></a>
+                    <a href="#"><img src="img/social5.png" alt="s"></a>
+                    <a href="#"><img src="img/social6.png" alt="s"></a>
+                </div>
+            </div>
+            <div class="site--footer__contact">
+                <div class="site--header__menu site--footer__menu">
+                    <nav>
+                        <ul class="site--header__scroll">
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">ABOUT US</a></li>
+                            <li><a href="">WHAT WE DO</a></li>
+                            <li><a href="">MEET THE TEAM</a></li>
+                            <li><a href="">OUR WORK</a></li>
+                            <li><a href="">GET IN TOUCH</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="site--footer__contacts">
+                    <div>
+                        <img src="img/phone.png" alt="p">
+                        <h4>CALL NOW: 0800  456  789</h4>
+                    </div>
+                    <div>
+                        <img src="img/mail.png" alt="m">
+                        <h4>MAIL: INFO@UNITY.COM</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 </html>
