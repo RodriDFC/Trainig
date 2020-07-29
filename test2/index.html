@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link href="css/style.css" rel="stylesheet">
     <title>Title</title>
 </head>
@@ -11,8 +12,17 @@
     <header class="site--header">
         <div class="container">
             <div class="site--header__logo">
-                <img src="img/logo.png" alt="logo">
-                <p>Shoe Shop</p>
+                <a href="#">
+                    <img src="img/logo.png" alt="logo">
+                    <p>Sho<span>e</span> Shop</p>
+                </a>
+            </div>
+            <div class="site--header__menu">
+                <img src="img/header1.png" alt="h">
+                <img src="img/header1.png" alt="h">
+                <div>
+                    <a href="#"><img src="img/header2.png" alt="h"></a>
+                </div>
             </div>
             <div class="site--header__tittle">
                 <h1>Nike</h1>
@@ -26,19 +36,29 @@
                     athlete Phill Knight
                 </p>
             </div>
+            <div class="site--header__social">
+                <nav>
+                    <ul>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href=""><i class="fa fa fa-pinterest"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
        </div>
     </header>
     <section class="site--nikeAir">
         <div class="container">
-            <div class="site--nikeAir__row">
-                <figure class="site--nikeAir__img">
-                    <img src="img/shoe1.png" alt="shoe1">
-                </figure>
+            <div class="site--nikeAir__reverse">
                 <div class="site--nikeAir__text">
                     <h2>Nike Air Force One MID id</h2>
                     <p>Bring to the table win-win survival strategies to ensure proactive domination
-                    at the end of the day, going forward</p>
+                        at the end of the day, going forward</p>
                     <button class="button">View Now</button>
+                </div>
+                <div class="site--nikeAir__img">
+                    <img src="img/shoe1.png" alt="shoe1">
                 </div>
             </div>
         </div>
@@ -48,9 +68,12 @@
             <h2>Popular Arrivals</h2>
             <div class="section--popular__cards">
                 <div class="section--popular__card">
-                    <figure class="section--popular__img">
-                        <img src="img/popular1.png" alt="team1" width="160px" height="115px">
-                    </figure>
+                    <div class="section--popular__img">
+                        <div>
+                            <img src="img/popular1.png" alt="team1" width="160px" height="115px">
+                        </div>
+                        <button class="button button_hover">View Details</button>
+                    </div>
                     <div class="section--popular__cardBody">
                         <h4>Nike shoes</h4>
                         <span>Shop Outdoors</span>
@@ -58,9 +81,12 @@
                     </div>
                 </div>
                 <div class="section--popular__card">
-                    <figure class="section--popular__img">
-                        <img src="img/popular2.png" alt="team3" width="160px" height="115px">
-                    </figure>
+                    <div class="section--popular__img">
+                        <div>
+                            <img src="img/popular2.png" alt="team1" width="160px" height="115px">
+                        </div>
+                        <button class="button button_hover">View Details</button>
+                    </div>
                     <div class="section--popular__cardBody">
                         <h4>Nike shoes</h4>
                         <span>Shop Outdoors</span>
@@ -68,9 +94,12 @@
                     </div>
                 </div>
                 <div class="section--popular__card">
-                    <figure class="section--popular__img">
-                        <img src="img/popular3.png" alt="team3" width="160px" height="115px">
-                    </figure>
+                    <div class="section--popular__img">
+                        <div>
+                            <img src="img/popular3.png" alt="team1" width="160px" height="115px">
+                        </div>
+                        <button class="button button_hover">View Details</button>
+                    </div>
                     <div class="section--popular__cardBody">
                         <h4>Nike shoes</h4>
                         <span>Shop Outdoors</span>
@@ -78,9 +107,12 @@
                     </div>
                 </div>
                 <div class="section--popular__card">
-                    <figure class="section--popular__img">
-                        <img src="img/popular4.png" alt="team3" width="160px" height="115px">
-                    </figure>
+                    <div class="section--popular__img">
+                        <div>
+                            <img src="img/popular4.png" alt="team1" width="160px" height="115px">
+                        </div>
+                        <button class="button button_hover">View Details</button>
+                    </div>
                     <div class="section--popular__cardBody">
                         <h4>Nike shoes</h4>
                         <span>Shop Outdoors</span>
@@ -92,21 +124,22 @@
     </section>
     <section class="section--collections">
         <div class="container">
-            <div class="site--nikeAir__row">
+            <div class="section--collections__row">
                 <div class="section--collections__text">
                     <h2>Pre - Fall Collections</h2>
                     <p>Bring to the table win-win survival strategies to ensure proactive domination.
-                    At. the end of the day, going forward a new normal that has evolved
-                    from generation X is on the runway heading towards a streamlined cloud solutions.
-                    User generated content in real-time will</p>
+                        At. the end of the day, going forward a new normal that has evolved
+                        from generation X is on the runway heading towards a streamlined cloud solutions.
+                        User generated content in real-time will
+                    </p>
                     <button class="button">View Now</button>
                 </div>
-                <figure class="section--collections__img1">
+                <div class="section--collections__img1">
                     <img src="img/collection1.png" alt="collection">
-                </figure>
-                <figure class="section--collections__img">
+                </div>
+                <div class="section--collections__img">
                     <img src="img/collection.png" alt="collection">
-                </figure>
+                </div>
             </div>
         </div>
     </section>
@@ -124,6 +157,65 @@
             </div>
         </div>
     </section>
+    <section class="section--blog">
+        <div class="container">
+            <h2>Latest Blog</h2>
+            <div class="section--blog__reverse">
+                <div class="section--blog__text">
+                    <h3>Colourful Offer ;</h3>
+                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                        Iterative approaches to corporate strategy foster collaborative thinking to further
+                        the overall value proposition. Organically grow the holistic world view of
+                        disruptive </p>
+                    <button class="button">Read More</button>
+                    <img src="img/blog1.png" alt="g">
+                </div>
+                <div class="section--blog__img">
+                    <img src="img/blog.png" alt="b">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="site--footer">
+        <div class="container">
+            <div class="site--header__logo site--footer__logo">
+                <a href="#">
+                    <img src="img/logo.png" alt="logo">
+                    <p>Sho<span>e</span> Shop</p>
+                </a>
+            </div>
+            <nav class="site--footer__menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Main</a></li>
+                    <li><a href="">Woman</a></li>
+                    <li><a href="">Popular</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </nav>
+            <nav class="site--footer__menu">
+                <ul>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Advertisement</a></li>
+                    <li><a href="">Online Shop</a></li>
+                </ul>
+            </nav>
+            <div class="site--footer__form">
+                <p>Sign up for news and events</p>
+                <form action="" class="form">
+                    <input type="text" placeholder="Your email address">
+                    <button class="button">Submit</button>
+                </form>
+                <i class="fa fa-twitter"></i><i class="fa fa-facebook"></i>
+                <i class="fa fa-google-plus"></i><i class="fa fa-pinterest"></i>
+            </div>
+        </div>
+        <div class="site--footer__copy">
+            <span><i class="fa fa-copyright"></i> Copyrights 2017. Shoe Shop by VictorThemes</span>
+            <a href="">Contact Us</a>
+        </div>
+    </footer>
 
 </body>
 </html>
