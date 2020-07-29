@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/style.css" />
     <title>Title</title>
 </head>
@@ -12,22 +13,19 @@
         <div class="container">
             <div class="site--header__logo">
                 <img src="img/logo.png" alt="logo"/>
-                <ul>
-                    <li><a href="#"><img src="img/ellipse.png" alt="e"></a></li>
-                </ul>
             </div>
+            <nav class="site--header__menu">
+                <ul>
+                    <li><a href="#"><div><i class="fa fa-search"></i></div></a></li>
+                    <li><a href="#"><i class="fa fa-bars"></i></a></li>
+                </ul>
+            </nav>
             <div class="container__row">
                 <div class="container__col">
-                    <figure class="site--header__img">
-                        <img id="header2" src="img/header2.png" alt="header2">
-                        <img id="header1" src="img/header1.png" alt="header2">
-                        <img id="header3" src="img/header3.png" alt="header2">
-                        <img id="shapeheader2" src="img/shapeheader2.png" alt="shapeheader2">
-                        <img id="shapeheader3" src="img/shapeheader3.png" alt="shapeheader2">
-                        <img id="shapeheader4" src="img/shape4.png" alt="shapeheader2">
-                        <img id="shapeheader5" src="img/shapeheader5.png" alt="shapeheader2">
+                    <div class="site--header__img">
+                        <img id="headerImg" src="img/headerImg.png" alt="header">
                         <img id="shapeheader1" src="img/shapeheader1.png" alt="shapeheader2">
-                    </figure>
+                    </div>
                 </div>
                 <div class="container__col">
                     <div class="site--header__text">
@@ -46,32 +44,117 @@
     </header>
     <section class="section--space">
         <div class="container">
-            <div class="container__row">
-                <div class="container__col">
-                    <figure class="section--space__img">
-                        <img id="spaceShape1" src="img/spaceShape1.png" alt="spaceShape1">
-                        <img id="spaceShape2" src="img/spaceShape2.png" alt="spaceShape2">
-                        <img id="spaceShape3" src="img/spaceShape3.png" alt="spaceShape3">
-                        <img id="spaceShape4" src="img/spaceShape4.png" alt="spaceShape4">
-                    </figure>
-
-                </div>
-                <div class="container__col">
-                    <div class="section--space__text">
-                        <h2>Create Some Space</h2>
-                        <p>Designate a workspace at home for those late nights. This can be anywhere you have
+            <div class="container--imgText">
+                <div class="container--imgText__text">
+                    <h2>Create Some Space</h2>
+                    <p>Designate a workspace at home for those late nights. This can be anywhere you have
                             access to a flat surface and adequate lighting that allow you to concentrate-a
                             desk, you kitchen table, a reading chair, just not bed! This help your mind
                             and body understand when you´re in working mode and allows you to more effective
                             transition to "home" mode when yor´re done.
-                        </p>
-                        <a href="#">READ MORE  <img src="img/rigth.png" alt="ri"></a>
-                    </div>
+                    </p>
+                    <a href="#">READ MORE  <img src="img/rigth.png" alt="ri"></a>
+                </div>
+                <div class="container--imgText__img">
+                    <img src="img/img.png" alt="img">
                 </div>
             </div>
         </div>
     </section>
-
-
+    <section class="section--space section--work">
+        <div class="container">
+            <div class="container--imgText section--space__work">
+                <div class="container--imgText__text">
+                    <h2>Stay Focused  on Work</h2>
+                    <p>In addition to your workload, you probably also have a to-do list that includes going
+                        grocery shopping, washing the dishes, and doing laundry. And it’s probably making you
+                        sweat just thinking about how you’ll manage to get everything done. My advice:
+                        Compartmentalize. Prioritize the urgent to-do (your work project), and let yourself
+                        off the hook with the others. roommate or spouse to take care of the dishes tonight in
+                    </p>
+                    <a href="#">READ MORE  <img src="img/rigth.png" alt="ri"></a>
+                </div>
+                <div class="container--imgText__img">
+                    <img src="img/img1.png" alt="img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section--space section--quitM">
+        <div class="container">
+            <div class="container--imgText section--quit">
+                <div class="container--imgText__text">
+                    <h2>Quit Multitasking</h2>
+                    <p>On a similar note, don’t try to fit in the fun stuff on an evening or weekend when you
+                        need to be working. If you’re trying to squeeze in writing a blog post during the
+                        commercial breaks of American Idol, chances are it won’t be that good, and you’ll
+                        end up spending more time on revising it later. Either commit to taking a break
+                        from work for some fun or getting everything done now so that you can enjoy
+                        yourself fully later.</p>
+                    <p>
+                        Working after hours is one of those unfortunate facts of life, but you can create
+                        rituals and boundaries that enable you to do it in a healthy, productive way.
+                        Furthermore, establishing these
+                    </p>
+                    <a href="#">READ MORE  <img src="img/rigth.png" alt="ri"></a>
+                </div>
+                <div class="container--imgText__img">
+                    <img src="img/img2.png" alt="img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section--remote">
+        <div class="container">
+            <div class="section--remote__row">
+                <div class="section--remote__text">
+                    <h2>Remote jobs  waiting ahead!</h2>
+                    <p>You'll get our latest and greatest jobs delivered  to your inbox 1-2 times
+                        a week
+                    </p>
+                </div>
+                <div class="section--remote__form">
+                    <form action="" class="form">
+                        <input class="input" type="text">
+                        <button class="button">Sing Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="site--footer">
+        <div class="container">
+            <div class="site--footer__row">
+                <div class="site--footer__text">
+                    <img src="img/footer.png" alt="f">
+                    <p>We provide resource for companies that see remote work as an opportunity,
+                        from hiring to training to managing distributed teams.  We are focused on
+                        providing expert insight, best practices, and valuable support for organizations
+                        exploring or already embracing a remote team as a significant portion of their
+                        workforce
+                    </p>
+                </div>
+                <div class="site--footer__menu">
+                    <nav>
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Find Remote Jobs</a></li>
+                            <li><a href="">Post Remote</a></li>
+                            <li><a href="">Jobs</a></li>
+                            <li><a href="">Blog</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="site--footer__social">
+                    <div><a href=""><i class="fa fa-instagram"></i></a></div>
+                    <div><a href=""><i class="fa fa-facebook"></i></a></div>
+                    <div><a href=""><i class="fa fa-twitter"></i></a></div>
+                </div>
+            </div>
+            <div class="site--footer__copyright"><p>© 2018 Zenwork. All rights reserved.</p></div>
+        </div>
+        <img id="footer1" src="img/footer1.png" alt="fo">
+        <img id="footer2" src="img/footer2.png" alt="fo">
+    </footer>
 </body>
 </html>
