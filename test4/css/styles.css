@@ -161,18 +161,29 @@ h1, h2, h3, h4, h5, h6 {
 .section--process__img img{
     width: 75vw;
     height: 30vw;
+    margin-top: 3vw;
     margin-bottom: 3vw;
     padding-left: 1vw;
 }
 .section--process__explications{
     display: inline-block;
-    width: 240px;
-    margin-right: 20px;
+    width: 235px;
+    padding-right: 26px;
+}
+.section--process__explications h4{
+    font-size: 16px;
+    color: rgb(93, 93, 93);
+}
+.section--process__explications p{
+    font-size: 16px;
+    color: rgb(93, 93, 93);
+    line-height: 1.733;
 }
 /***  services  ***/
 .section__services{
     background: url("../img/services.png") center;
     background-size: cover;
+    padding-bottom: 4.5vw;
 }
 .section__services figure{
   margin-bottom: 0;
@@ -198,6 +209,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .section__services__row{
     position: relative;
+    margin-bottom: -4px;
 }
 .section__services__row #services1{
     width: 30vw;
@@ -216,25 +228,26 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     left: 0;
     width: 8vw;
-    height: 40vw;
+    height: 39vw;
 }
 .section__services__img #services0_2{
     position: absolute;
     top: 0;
     left: 30vw;
     width: 8vw;
-    height: 40vw;
+    height: 39vw;
 }
 .section__services__img #services0_3{
     position: absolute;
     top: 0;
     left: 60vw;
     width: 8vw;
-    height: 40vw;
+    height: 39vw;
 }
 .section__services__col{
     display: inline-block;
     position: relative;
+    margin-right: -4px;
 }
 .section__services__imgText{
     position: absolute;
@@ -413,6 +426,7 @@ h1, h2, h3, h4, h5, h6 {
     .section__services__col{
         display: block;
         position: relative;
+        margin-bottom: -4px;
     }
     .section__services__row #services1{
         width: 100%;
