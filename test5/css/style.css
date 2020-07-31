@@ -717,6 +717,13 @@ h1, h2, h3, h4, h5, h6 {
         min-height: 170vw;
     }
 }
+/***  skills ***/
+@media (max-width: 678px) {
+    .section--skill__skill{
+        display: block;
+        padding:inherit;
+    }
+}
 /** blog  **/
 @media(max-width: 768px){
     .section--blog__imgDer{
