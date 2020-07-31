@@ -239,7 +239,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 25%;
     height:  25.62vw;
 }
-.section--twitter__img1Text{
+.section--twitter__imgText{
     background: rgba(0,0,0,0.5);
     position: absolute;
     top: 1vw;
@@ -248,17 +248,24 @@ h1, h2, h3, h4, h5, h6 {
     max-height: 55%;
     padding: 5vw 5vw;
     text-align: center;
+    opacity: 0;
 }
-.section--twitter__img1Text h4{
+.section--twitter__img4:hover .section--twitter__imgText,
+.section--twitter__img3:hover .section--twitter__imgText,
+.section--twitter__img2:hover .section--twitter__imgText,
+.section--twitter__img1:hover .section--twitter__imgText{
+    opacity: 1;
+}
+.section--twitter__imgText h4{
     font-size: 1.3vw;
     font-family: "Raleway";
     color: rgb(255, 255, 255);
 }
-.section--twitter__img1Text hr{
+.section--twitter__imgText hr{
     color: rgb(255, 255, 255);
     width: 20%;
 }
-.section--twitter__img1Text p{
+.section--twitter__imgText p{
     font-size: 1.3vw;
     color: rgb(255, 255, 255);
 }
