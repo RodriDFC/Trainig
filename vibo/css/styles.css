@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+body{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: normal;
+    color: rgb(106, 109, 137);
+}
+h1,h2{
+    font-weight: 700;
+    font-family: 'Work Sans', sans-serif;
+}
+h3,h4,h5,h6{
+    color: rgb(35, 49, 72);
+    font-weight: 600;
+    font-family: 'Work Sans', sans-serif;
+}
+.container {
+    max-width: 86%;
+    margin: 0 auto;
+    padding: 0;
+}
+/*** header  ****/
+.site--header{
+    background: url("../img/background.png");
+    background-size: cover;
+    position: relative;
+}
+.site--header__logo{
+    padding-top: 2vw;
+    font-size: 47px;
+    color: rgb(255, 255, 255);
+}
+.site--header__menu{
+    position: absolute;
+    top: 2.5vw;
+    right: 6vw;
+}
+.site--header__menu ul li{
+    display: inline-block;
+}
+.site--header__menu ul li a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding-right: 2.2vw;
+}
+.menuBar{
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+.site--header__tittle{
+    text-align: center;
+    margin: 10vw 0 3.7vw 0;
+}
+.site--header__tittle h1{
+    font-size: 3.3vw;
+    color: rgb(255, 255, 255);
+    line-height: 1.333;
+    margin: 0;
+}
+.site--header__tittle p{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+.button{
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+    color: rgb(35, 49, 72);
+    border: none;
+    font-weight: 700;
+    padding: 15px 50px;
+    margin-left: 2vw;
+}
+.site--header__download{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 6vw;
+}
+.buttonTransparent{
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+}
+.site--header__img{
+    display: flex;
+    justify-content: center;
+}
+/** section--features ***/
+.section--features{
+     background: url("../img/backgroundfeatures.png") center top;
+     background-size: cover;
+     position: relative;
+     bottom: 16.5vw;
+     height: 90vw;
+ }
+.section--features .container{
+    display: flex;
+    align-items: center;
+}
+.section--features__img{
+    position: absolute;
+    top: 32vw;
+    left: 10vw;
+}
+.section--features__property{
+    display: flex;
+}
+.section--features__property div{
+    padding: 0 20px;
+    height: 310px;
+    width: 260px;
+    background: white;
+    box-shadow: 0 6px 9px 0 rgba(35, 39, 47, 0.1);
+}
+.section--features__property1{
+    text-align: center;
+    position: absolute;
+    top: 20vw;
+    right: 36vw;
+}
+.section--features__property2{
+    text-align: center;
+    position: absolute;
+    top: 26vw;
+    right: 10vw;
+}
+.section--features__property3{
+    text-align: center;
+    position: absolute;
+    bottom: 17vw;
+    right: 40vw;
+}
+.section--features__property4{
+    text-align: center;
+    position: absolute;
+    bottom: 10vw;
+    right: 14vw;
+}
+.section--features__property1 img,
+.section--features__property2 img,
+.section--features__property3 img,
+.section--features__property4 img{
+    padding: 60px 110px 25px 110px;
+}
+.section--features__property1 h3,
+.section--features__property2 h3,
+.section--features__property3 h3,
+.section--features__property4 h3{
+    font-size: 14px;
+    font-weight: bold;
+}
+.section--features__property1  p,
+.section--features__property2  p,
+.section--features__property3  p,
+.section--features__property4  p{
+    font-size: 14px;
+    line-height: 1.946;
+}
+/*** section--ready  ***/
+.section--ready{
+
+}
+.section--ready .container{
+    display: flex;
+    justify-content: space-between;
+}
+.section--ready__text{
+    width: 490px;
+    text-align: end;
+    padding-right: 30px;
+}
+.section--ready__text h2{
+    font-size: 30px;
+    color: rgb(35, 49, 72);
+}
+.section--ready__text p{
+    font-size: 14px;
+    line-height: 1.946;
+    padding-bottom: 4vw;
+}
+.section--ready__badges{
+    position: relative;
+    bottom: 6vw;
+}
+.section--ready__badge{
+    width: 550px;
+    min-height: 78px;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 6px 9px 0 rgba(35, 39, 47, 0.1);
+}
+.section--ready__badge h3{
+    font-size: 15px;
+    padding-top: 30px;
+    padding-left: 30px;
+    margin: 0;
+    color: rgb(35, 49, 72);
+}
+.section--ready__badge i{
+    padding-right: 30px;
+}
+.section--ready__badge p{
+    display: none;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    line-height: 1.946;
+    padding-left: 70px;
+    padding-bottom: 28px;
+}
+.buttonBlue{
+    background-color: rgb(51, 210, 253);
+    color: white;
+}
+.section--ready__badge:hover{
+    background-color: rgb(51, 210, 253);
+}
+.section--ready__badge:hover p{
+    display: block;
+}
+/*** section--code  ***/
+.section--code{
+    background-color: rgb(250, 250, 252);
+    padding-top: 4vw;
+    padding-bottom: 5vw;
+}
+.section--code .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row-reverse;
+}
+.section--code__text{
+    text-align: left;
+    width: 480px;
+}
+.section--code__text h2{
+    font-size: 30px;
+    color: rgb(35, 49, 72);
+}
+.section--code__text h4{
+    font-size: 15px;
+    color: rgb(35, 49, 72);
+    font-weight: bold;
+}
+.section--code__text i{
+    color: rgb(51, 210, 253);
+    padding-right: 15px;
+}
+.section--code__text p{
+    font-size: 14px;
+    color: rgb(106, 109, 137);
+    line-height: 1.946;
+}
+/**  section--appStore **/
+.section--appStore{
+    background: url("../img/background.png");
+    background-size: cover;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    position: relative;
+}
+.section--appStore__text p{
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    line-height: 1.946;
+    padding-bottom: 30px;
+}
+.section--appStore__img{
+    padding-left: 4vw;
+    padding-bottom: 4vw;
+}
+.buttonLarge{
+    bottom: -35px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+    position: absolute;
+    width: 371px;
+    padding: 25px 0;
+    left: 0;
+    color: white;
+    right: 0;
+    background-image: linear-gradient( -90deg, rgb(255,124,110) 1%, rgb(245,49,127) 99%);
+    box-shadow: 0 11px 29px 0 rgba(255, 7, 95, 0.2);
+}
+/** section--touch ***/
+.section--touch{
+    padding-top: 9.51vw;
+    padding-bottom: 6vw;
+}
+.section--touch__text{
+    display: flex;
+    justify-content: center;
+}
+.section--touch__textCol{
+    padding-right: 8vw;
+}
+.section--touch__textCol h4{
+    font-size: 15px;
+}
+.section--touch__textCol ul{
+    list-style: none;
+    padding: 0;
+    line-height: 1.946;
+}
+.section--touch__textCol ul li a{
+    text-decoration: none;
+    color: rgb(106, 109, 137);
+    font-size: 14px;
+}
+.section--touch__form{
+    padding-top: 7vw;
+    text-align: center;
+}
+.section--touch__form h3{
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+    line-height: 2;
+}
+.section--touch__form p{
+    font-size: 14px;
+    color: rgb(106, 109, 137);
+    line-height: 1.946;
+}
+.form{
+    padding-top: 5vw;
+}
+.form input{
+    width: 570px;
+    background-color: rgb(246, 247, 251);
+    height: 45px;
+    border: none;
+}
+.form button{
+    color: black;
+}
+/** footer **/
+.site--footer{
+    background: url("../img/backgroundFooter.png");
+    background-size: cover;
+    padding-top: 2.6vw;
+    padding-bottom: 2.6vw;
+}
+.site--footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+.site--footer__copyright p{
+    font-size: 14px;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    line-height: 1.946;
+}
+.site--footer__social a{
+    text-decoration: none;
+    padding-right: 2.2vw;
+    color: white;
+}
+/**    media **/
+    /**  header  ****/
+@media (max-width: 908px) {
+    .site--header__menu{
+        width: 80%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        right:  0;
+        background-color: rgb(51, 210, 253);;
+        overflow-y: auto;
+    }
+    .site--header__menu ul li{
+        display: block;
+        padding: 10px 40px;
+        border-bottom: 1px solid rgba(255,255,255,0.5);
+    }
+    .menuBar{
+        display: block;
+        width: 100%;
+        padding: 15px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .menuBar a{
+        text-decoration: none;
+        color: white;
+    }
+    .menuBar a i{
+        float: right;
+    }
+}
+/** feature **/
+@media (max-width: 1188px) {
+     .section--features{
+        height: auto;
+    }
+    .section--features__property div{
+        margin: 20px auto;
+    }
+    .section--features__property{
+        flex-wrap: wrap;
+        margin-top: 15vw;
+    }
+    .section--features__property1,
+    .section--features__property2,
+    .section--features__property3,
+    .section--features__property4{
+        flex: 40%;
+        position: relative;
+        top: inherit;
+        bottom: inherit;
+        right: inherit;
+    }
+    .section--features__img{
+        position: relative;
+        top: inherit;
+        left: inherit;
+        margin: 20px auto;
+    }
+    .section--features .container{
+        flex-wrap: wrap;
+    }
+}
+/** ready  */
+@media (max-width: 1008px) {
+    .section--ready .container{
+        flex-wrap: wrap;
+        justify-content: inherit;
+    }
+    .section--ready__text{
+        width: 95%;
+        text-align: end;
+        padding-right: 0;
+    }
+    .section--ready__badges{
+        flex: 100%;
+        position: inherit;
+    }
+    .section--ready__badge{
+        width: inherit;
+    }
+    .section--ready__badge p{
+        padding-left: 10px;
+    }
+}
+/*** section--code  ***/
+@media( max-width: 1118px){
+    .section--code .container{
+        flex-wrap: wrap;
+        justify-content: inherit;
+    }
+    .section--code__text{
+        flex: 100%;
+        text-align: left;
+        width: 480px;
+    }
+    .section--code__image{
+        flex: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .section--code__image img{
+        width: 90vw;
+        height: 50vw;
+    }
+    /**  section--appStore **/
+    .section--appStore__img img{
+        padding-top: 5vw;
+        width: 23vw;
+        height: 40vw;
+        padding-bottom: 6vw;
+    }
+}
+/** section--touch ***/
+@media (max-width: 768px) {
+    .form input{
+        width: 80%;
+        margin-bottom: 3vw;
+        background-color: rgb(246, 247, 251);
+        height: 45px;
+        border: none;
+    }
+}
+@media (max-width: 530px) {
+    /** footer **/
+    .site--footer .container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .site--footer__social{
+        padding-top: 2vw;
+    }
+}
