@@ -1,0 +1,34 @@
+// Header
+.site--header {
+    width: 100%;
+    background: url("../img/background.png") no-repeat center center fixed;
+    background-size: cover;
+    &__logo {
+        padding-top: 35px;
+        max-width: 175px;
+    }
+    .site--header__tittle{
+        text-align: center;
+        margin: 18vw 0;
+    }
+    .site--header__menu{
+        nav{
+            div{
+                ul{
+                    li{
+                        padding: 1vw 3vw 1vw 0;
+                        a{
+                            text-decoration: none;
+                            padding: 0 4px;
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.active{
+    border-bottom:3px solid $color-green !important;
+}

@@ -1,0 +1,46 @@
+variables en sass
+    definicion
+        $variable:valor;
+   como usarlo
+        etiqueta,clase,...{
+            propiedad: $variable;
+        }
+Anidacion en sass
+    header{
+        //contenido header
+        .class1{
+            //contenido class1
+            .class2{
+                //contenido class2
+                 &:hover{
+                    //contenido efecto hover de la class2
+                 }
+
+            }
+        }
+    }
+import en sass
+sirve para dividir el codigo sass en difrentes archivos para organizar bien el codigo
+    @import "variables";
+    @import "mixins";
+    @import "general";
+    @import "layout";
+    @import "module";
+
+mixin
+se usa para reusar codigo sass, son como funciones
+    definir mixin
+        @mixin nombreMixin($parametros) {
+            propiedades
+            ejm:
+            background-image: linear-gradient(to right,$color1 55.48%, $color2 73.52%) !important;
+        }
+    usar mixin
+        .clase{
+            @include nombreMixin(parametros);
+        }
+        ejm:
+        .section--sass__bg{
+            @include gradiente(red,blue);
+        }
+

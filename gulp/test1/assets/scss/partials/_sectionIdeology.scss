@@ -1,0 +1,109 @@
+.section--ourIdeology{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15vw;
+  .section--ourIdeology__figures{
+    flex: 50%;
+    #layer{
+      opacity: 0.4;
+      position: absolute;
+      top: 11vw;
+      width: 48vw;
+      height: 35vw;
+    }
+    #rectangle{
+      width: 39vw;
+      height: 39vw;
+    }
+    h3{
+      font-size: 3vw;
+      width: 26vw;
+      position: absolute;
+      top: 23.5vw;
+      left: 24vw;
+      font-weight: bold;
+      @media (max-width: 768px) {
+          position: absolute;
+          top: 23.5vw;
+          left: 53vw;
+      }
+    }
+    @media (max-width: 768px) {
+      margin: 0 30vw;
+      flex: 100%;
+    }
+  }
+  .section--ourIdeology__learn{
+    margin-top: 8vw;
+    flex: 50%;
+    h2{
+      line-height: 5.15vw;
+    }
+    span{
+      color: rgb(233, 132, 87);
+    }
+
+    h4{
+      margin-bottom: 0.5vw;
+    }
+    .section--ourIdeology__plus {
+      position: absolute;
+      top: 17vw;
+      right: 6vw;
+      z-index: -1;
+      width: 40vw;
+      height: 20vw;
+      @media (max-width: 768px) {
+          position: absolute;
+          top: 59.5vw;
+          left: 15vw;
+          opacity: 0.5;
+      }
+    }
+    @media (max-width: 768px) {
+      margin: 13vw 10vw 0 10vw;
+      flex: 100%;
+    }
+  }
+  #plus1{
+    position: absolute;
+    bottom: 0;
+    right: 32vw;
+    @media (max-width: 768px) {
+        position: absolute;
+        bottom: -5vw;
+        left: 28vw;
+        width: 3vw;
+        height: 3vw;
+    }
+  }
+  .circle1{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: transparent;
+    position: absolute;
+    top: 4vw;
+    right: 10vw;
+    border: 3px solid rgb(233, 132, 87);
+    @media (max-width: 768px) {
+        top: 47vw;
+        right: 20vw;
+    }
+  }
+  .circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: transparent;
+    position: absolute;
+    top: -4vw;
+    right: 29vw;
+    border: 9px solid rgba(0,0,0,0.2);
+    @media (max-width: 768px) {
+        top: 5vw;
+        left: 5vw;
+    }
+  }
+}
