@@ -1,0 +1,38 @@
+.section--collections{
+    margin-top: 9vw;
+    margin-bottom: 12vw;
+    position: relative;
+    .section--collections__text{
+        padding-top: 140px;
+        @media (max-width: $tablet) {
+            padding-top: inherit;
+        }
+    }
+    .section--collections__images{
+        .section--collections__img1{
+            position: absolute;
+            top: 16vw;
+            right: -5.5vw;
+            z-index:-1;
+            img{
+                width: 21vw;
+                height: 27.81vw;
+                @media (max-width: 768px) {
+                    height: inherit;
+                    width: inherit;
+                }
+            }
+        }
+        .section--collections__img{
+            img{
+                height: 36vw;
+                width:  34.40vw;
+                border: 8px solid snow;
+                @media (max-width: $tablet) {
+                    height: inherit;
+                    width: inherit;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.hero{
+    background-image: linear-gradient(75deg, #e9e9e9 55%, $color-green1 55%);
+    position: relative;
+    padding-top: 200px;
+    .hero__img{
+        height: 43vw;
+        img{
+            position: relative;
+            left: 16.83vw;
+            top: -14.71vw;
+            width: 52vw;
+            height: 52vw;
+        }
+    }
+    .hero__ver{
+        transform: rotate(270deg);
+        position: absolute;
+        bottom: 15vw;
+        left: -5vw;
+        width: 25%;
+        font-weight: lighter;
+        @media (max-width: 1088px) {
+            transform: inherit;
+            position: relative;
+            bottom: 0;
+            left: 0;
+            font-size: 15px;
+            margin-left: 5vw;
+            width: 75%;
+            font-weight: lighter;
+        }
+    }
+    .hero__social{
+        position: absolute;
+        bottom: 3vw;
+        right: 3vw;
+        ul {
+            li{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: black;
+                border-radius: 50%;
+                margin-top: 2.16vw;
+                width: 49px;
+                height: 49px;
+                &:hover{
+                    background: white;
+                }
+                &:hover a{
+                    color: $color-green1;
+                }
+            }
+        }
+    }
+}
+

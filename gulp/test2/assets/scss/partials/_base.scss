@@ -1,6 +1,6 @@
 /* Typographical Elements
 --------------------------------------------- */
-
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Poppins:ital,wght@0,300;0,700;1,400&family=Roboto:wght@700&display=swap');
 html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -11,12 +11,15 @@ body {
     color: $base-color;
     font-family: $font-family;
     font-size: $font-size;
-    font-weight: normal;
-    line-height: 1.625;
+    font-weight: 300;
+    line-height: 2;
     margin: 0;
     overflow-x: hidden;
 }
-
+.container{
+    max-width: $max-width;
+    padding: 0 50px;
+}
 button,
 input:focus,
 input[type="button"],
@@ -29,7 +32,7 @@ textarea:focus,
 }
 
 a {
-    color: #0073e5;
+    color: $color-white;
     text-decoration: underline;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     &:focus,
@@ -94,26 +97,33 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Heebo', sans-serif;
+    font-family: $font-heading;
     font-weight: 400;
     line-height: 1.2;
     margin: 0 0 20px;
+    color:black;
 }
 
 h1 {
-    font-size: 30px;
+    font-weight: 700;
+    font-size: 9vw;
+    letter-spacing: 5px;
+    font-family: $font-h1;
 }
 
 h2 {
-    font-size: 27px;
+    font-size: 45px;
+    font-weight: 500;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: $font-family;
 }
 
 .entry-content h3,

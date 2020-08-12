@@ -1,0 +1,38 @@
+.site--nikeAir{
+    margin-top: 7.32vw;
+    margin-bottom: 2vw;
+    position: relative;
+    height: 42vw;
+    @media (max-width: $tablet){
+        height: inherit;
+    }
+    .site--nikeAir__text{
+        z-index: 10;
+        padding-top: 14vw;
+        position:relative;
+        right: 2vw;
+        @media (max-width: $tablet) {
+            position: inherit;
+        }
+        button{
+            position: relative;
+            left: 28vw;
+        }
+    }
+    .site--nikeAir__img{
+        background: rgba(0,0,0,0.1);
+        position: absolute;
+        top:0;
+        left: 5vw;
+        height: 40vw;
+        width: 48vw;
+        border: 8px solid snow;
+        @media (max-width: $tablet) {
+            height: 55vw;
+            position: inherit;
+        }
+        img{
+            padding: 8vw 5.8vw;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.section--thought{
+    background: rgb(248, 248, 248);
+    padding-top: 8vw;
+    padding-bottom: 5vw;
+    text-align:center;
+    .section--thought__text{
+        h2{
+            margin-bottom: 2.5vw;
+        }
+        p{
+            margin-bottom: 2.5vw;
+        }
+        span{
+            font-size: 18px;
+            color: rgb(102, 102, 102);
+        }
+        #ui{
+            color: $color-green1;
+            margin-top: 0;
+        }
+    }
+}
