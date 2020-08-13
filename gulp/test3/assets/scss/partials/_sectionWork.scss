@@ -1,0 +1,32 @@
+.section--work{
+    position: relative;
+    padding-bottom: 30px;
+    height: 705px;
+    @media (max-width: 992px) {
+        height: inherit;
+    }
+    .col-lg-6{
+        padding-right: 0;
+    }
+    .contain__text{
+        position: absolute;
+        top: 4vw;
+        left: 8.4vw;
+        @include contain();
+        @media (max-width: 992px) {
+            @include responsive();
+            max-width: inherit;
+        }
+    }
+    .contain__img{
+        position: absolute;
+        top:-7vw;
+        right: 0;
+        height: 53vw;
+        width: 44vw;
+        @media (max-width: 992px) {
+            @include responsive();
+            height: inherit;
+        }
+    }
+}

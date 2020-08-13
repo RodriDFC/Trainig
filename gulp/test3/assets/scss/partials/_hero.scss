@@ -1,0 +1,36 @@
+.hero{
+    position: relative;
+    padding-bottom: 50px;
+    height: 800px;
+    #shapeheader1{
+        position: absolute;
+        left: 0;
+        top: 11vw;
+        width: 5.78vw;
+        height: 28vw;
+    }
+    .hero__img{
+        #headerImg{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 70vw;
+            height: 45vw;
+        }
+    }
+    .hero__text{
+        padding-top: 200px;
+        padding-left:120px;
+        @media (max-width: 992px) {
+            padding-top: 250px;
+            padding-left: 0;
+            h1{
+                font-size: 30px !important;
+            }
+        }
+        .span{
+            font-size:  20px;
+        }
+        @include form();
+    }
+}

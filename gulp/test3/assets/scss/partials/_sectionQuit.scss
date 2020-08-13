@@ -1,0 +1,7 @@
+.section--quit{
+  height: 800px;
+  @media (max-width: 992px) {
+    height: inherit;
+    margin-bottom: 50px;
+  }
+}
