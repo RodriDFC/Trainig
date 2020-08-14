@@ -1,0 +1,21 @@
+.hero{
+    background: url("../img/header1.png") center fixed;
+    background-size: cover;
+    padding-top: 350px;
+    @media (max-width: 762px) {
+        padding-top: 35vw;
+    }
+    .hero__tittle{
+        text-align: center;
+        p{
+            padding-top: 50px;
+            padding-bottom: 360px;
+            font-size: 20px;
+            color: rgb(168, 168, 168);
+            line-height: 1.2;
+            @media (max-width: 762px) {
+                padding-bottom: 26vw;
+            }
+        }
+    }
+}

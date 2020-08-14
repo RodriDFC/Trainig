@@ -1,0 +1,64 @@
+.section--steps{
+  background: url("../img/step.png") top;
+  background-size: cover;
+  position: relative;
+  img{
+    position: absolute;
+    top: -6vw;
+    right: 43vw;
+    width: 13vw;
+    height: 13vw;
+  }
+  .section--steps__text{
+      width: auto;
+      margin: 0 10vw;
+      text-align: center;
+      p{
+        color: black;
+      }
+      hr{
+        width: 5%;
+      }
+      h3{
+        padding-top: 9vw;
+        margin-bottom: 2vw;
+        span{
+          color: white;
+        }
+      }
+  }
+  .section--steps__form{
+    width: auto;
+    margin: 2vw 8vw 0 8vw;
+    padding-top: 5vw;
+    background: white;
+    border: 1px solid rgba(0,0,0,0.15);
+    .form{
+      input{
+        width: 54%;
+        padding: 10px;
+        margin: 15px 23%;
+        background-color: #fff;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        border-bottom: 1px solid #ddd;
+      }
+      .button{
+          color: black;
+          border: 2px solid black;
+          margin-top: 2%;
+          padding: 13px 45px;
+          background: white;
+          min-width: 15vw;
+      }
+      .button__pos{
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+        position: relative;
+        left: 23vw;
+      }
+    }
+  }
+}
+

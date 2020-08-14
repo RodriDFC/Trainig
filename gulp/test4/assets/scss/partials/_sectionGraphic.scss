@@ -1,0 +1,52 @@
+.section--graphics{
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    display: flex;
+    flex-wrap: wrap;
+    #line1{
+      width: 8%;
+    }
+    .section--graphics__graphic{
+        @media (max-width: 1250px) {
+            flex: 100%;
+        }
+        img{
+            width: 50.1vw;
+            height: 38.68vw;
+            @media (max-width: 1250px) {
+                width: 100%;
+                height: inherit;
+            }
+        }
+    }
+    .section--graphics__quisque{
+        flex: 1%;
+        background-color: rgb(248, 248, 248);
+        padding: 4vw 5vw 0 5vw;
+        @media (max-width: 1250px) {
+            flex: 100%;
+        }
+        h3{
+            span{
+                color: $color-red;
+            }
+        }
+        p{
+           padding-bottom: 2.5vw;
+        }
+        hr{
+            background-color: rgb(215, 215, 215);
+            border: 0.036vw solid rgb(215, 215, 215);
+            margin-bottom: 2vw;
+        }
+        .section--graphics__quisque-video{
+            display: flex;
+            p{
+              padding-left: 2vw;
+              padding-top: 2vw;
+            }
+        }
+    }
+}

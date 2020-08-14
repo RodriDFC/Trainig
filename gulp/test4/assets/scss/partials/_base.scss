@@ -1,5 +1,6 @@
 /* Typographical Elements
 --------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
 
 html {
     -moz-osx-font-smoothing: grayscale;
@@ -11,12 +12,15 @@ body {
     color: $base-color;
     font-family: $font-family;
     font-size: $font-size;
-    font-weight: normal;
+    font-weight: 100;
     line-height: 1.625;
     margin: 0;
     overflow-x: hidden;
 }
-
+.container{
+    max-width: $max-width;
+    padding: 0 50px;
+}
 button,
 input:focus,
 input[type="button"],
@@ -29,8 +33,9 @@ textarea:focus,
 }
 
 a {
+    font-size: 20px;
     color: #0073e5;
-    text-decoration: underline;
+    text-decoration: none;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     &:focus,
     &:hover {
@@ -52,6 +57,8 @@ ul {
 
 li {
     list-style-type: none;
+    padding: 0 8px;
+    font-size: 20px;
 }
 
 hr {
@@ -94,26 +101,31 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Heebo', sans-serif;
-    font-weight: 400;
-    line-height: 1.2;
-    margin: 0 0 20px;
+    font-family: $font-heading;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+    color: rgb(64, 64, 64);
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 73px;
+    color: $color-white;
 }
 
 h2 {
-    font-size: 27px;
+    font-size: 73px;
+    color: $color-red;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 69px;
 }
 
 h4 {
     font-size: 20px;
+    line-height: 1.44;
+    color: rgb(234, 175, 214);
 }
 
 .entry-content h3,
@@ -126,7 +138,8 @@ h4 {
 }
 
 h5 {
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 1.44;
 }
 
 h6 {

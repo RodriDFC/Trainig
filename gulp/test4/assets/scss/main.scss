@@ -6,6 +6,7 @@
 // bootstrap
 @import "../../vendor/scss/bootstrap/bootstrap-reboot";
 @import "../../vendor/scss/bootstrap/bootstrap-grid";
+@import "../../vendor/scss/bootstrap/images";
 
 // slick
 @import "../../vendor/scss/slick/slick";
@@ -31,7 +32,11 @@
 @import "partials/buttons";
 @import "partials/type";
 @import "partials/header";
-
+@import "partials/hero";
+@import "partials/sectionGraphic";
+@import "partials/sectionProcess";
+@import "partials/sectionService";
+@import "partials/sectionSteps";
 // --------------------------------------------------
 // layout
 @import "layout/footer";
