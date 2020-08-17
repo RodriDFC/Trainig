@@ -1,0 +1,46 @@
+.section--contact{
+  padding: 80px 0;
+  background: rgb(245, 245, 245);
+  .section--contact__tittle{
+      padding: 80px 0;
+  }
+  .form{
+    .form__1{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .form__1 textarea{
+      padding: 10px;
+      border-top: 3px solid black;
+      border-left: none;
+      border-bottom: 1px solid black;
+      border-right: none;
+      background: rgb(245, 245, 245);
+      flex: 100%;
+      margin: 5px 10px 25px 0;
+    }
+    .form__2{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .form__2 input{
+      padding: 10px;
+      border-top: 3px solid black;
+      border-left: none;
+      border-bottom: none;
+      border-right: none;
+      background: rgb(245, 245, 245);
+      flex: 45%;
+      margin: 5px 10px 5px 0;
+    }
+    .form__button{
+      display: flex;
+      justify-content: center;
+    }
+    .button-white{
+      background: white;
+      color: black;
+      border: 1px solid black;
+    }
+  }
+}

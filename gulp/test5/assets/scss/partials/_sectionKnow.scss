@@ -1,0 +1,7 @@
+.section--Know{
+    text-align: center;
+    padding: 90px 0;
+    .section--Know__text{
+        @include hr();
+    }
+}

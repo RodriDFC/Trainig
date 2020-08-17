@@ -1,0 +1,50 @@
+.section--gallery{
+    padding: 80px 0;
+    position: relative;
+    .section--blog__sep{
+        position: absolute;
+        width: 1.2vw;
+        height: 74vw;
+        top: 25%;
+        left: 47%;
+        @media(max-width: 992px){
+            display: none;
+        }
+    }
+    .button__blog{
+        border-radius: 50%;
+        background: rgb(123, 108, 99);
+        color: white;
+        height: 60px;
+        width: 60px;
+        position: relative;
+        font-size: 12px;
+        left: 44%;
+        border: 4px solid lightgray;
+    }
+    .section--gallery__text{
+        text-align: center;
+        @include hr();
+        padding-bottom: 80px;
+    }
+    .section--gallery__spacing{
+        .section--gallery__imgDerText{
+            padding: 40px 0 15px 20px !important;
+            text-align: left;
+            @media (max-width:  992px) {
+                padding: 20px !important;
+            }
+        }
+        .section--gallery__imgIzText{
+            padding: 40px 80px 15px 0 !important;
+            @media (max-width: 1180px) {
+                padding: 40px 40px 15px 0 !important;
+            }
+            text-align: right;
+            @media (max-width:  992px) {
+                text-align: left;
+                padding: 20px !important;
+            }
+        }
+    }
+}

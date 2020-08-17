@@ -1,6 +1,6 @@
 /* Typographical Elements
 --------------------------------------------- */
-
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Open+Sans:wght@300&family=Raleway:wght@400;500;600&display=swap');
 html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -16,6 +16,10 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
+.container{
+    max-width: $max-width;
+    padding: 0 50px;
+}
 
 button,
 input:focus,
@@ -29,19 +33,20 @@ textarea:focus,
 }
 
 a {
-    color: #0073e5;
-    text-decoration: underline;
+    color: $color-white;
+    text-decoration: none;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     &:focus,
     &:hover {
-        color: #333;
+        color: $base-color;
         text-decoration: none;
     }
 }
 
 p {
-    margin: 0 0 30px;
+    margin: 0;
     padding: 0;
+    color: rgb(33, 33, 33);
 }
 
 ol,
@@ -60,7 +65,8 @@ hr {
     border-bottom: 1px solid $base-color;
     clear: both;
     color: $base-color;
-    margin: 1.65em auto;
+    padding: 0;
+    margin: 40px auto;
 }
 
 b,
@@ -94,26 +100,31 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Heebo', sans-serif;
-    font-weight: 400;
+    font-family: $font-heading;
+    font-weight: 600;
     line-height: 1.2;
-    margin: 0 0 20px;
+    margin: 0;
+    color: $base-color;
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 66px;
+    color: $color-white;
 }
 
 h2 {
-    font-size: 27px;
+    font-size: 40px;
 }
 
 h3 {
     font-size: 24px;
+    color: $color-white;
+    line-height: 1.25;
+    font-weight: 500;
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .entry-content h3,
@@ -127,10 +138,11 @@ h4 {
 
 h5 {
     font-size: 18px;
+    color: rgb(54, 54, 54);
 }
-
 h6 {
     font-size: 16px;
+    color: rgb(255, 255, 255);
 }
 
 

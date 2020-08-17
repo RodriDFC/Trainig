@@ -1,0 +1,7 @@
+.section--project{
+    padding: 80px 0;
+    text-align: center;
+  .section--project__text{
+      @include hr();
+  }
+}

@@ -1,0 +1,30 @@
+.section--best{
+    position: relative;
+    padding-left: 30px;
+    background: rgb(245, 245, 245);
+    .section--best__text{
+        padding: 85px 0;
+        height: 567px;
+        @media (max-width: 992px) {
+            height: inherit;
+        }
+        h4{
+            padding-bottom: 30px;
+        }
+        p{
+            padding-bottom: 30px;
+            line-height: 1.875;
+        }
+    }
+    .section--best__img{
+        padding-right: 0;
+        position: absolute;
+        right: 0;
+        img{
+            height: 567px;
+        }
+        @media (max-width: 992px) {
+            position: relative;
+        }
+    }
+}

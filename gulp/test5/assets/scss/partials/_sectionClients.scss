@@ -1,0 +1,18 @@
+.section--clients{
+    background: black;
+    padding: 90px 0;
+    .section--clients__text{
+        text-align: center;
+        p{
+            color: rgb(146, 146, 146);
+            line-height: 2;
+            font-size: 18px;
+
+        }
+        span{
+            color: dodgerblue;
+            display: block;
+            padding-bottom: 30px;
+        }
+    }
+}

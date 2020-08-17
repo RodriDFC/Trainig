@@ -1,0 +1,20 @@
+.hero{
+    background: black;
+    padding: 270px 0 180px 0;
+    @media (max-width: 768px) {
+        padding: 150px 0 100px 0;
+    }
+    .site--header__tittle{
+        h1{
+            span{
+                color: $base-color;
+            }
+            @media (max-width: 768px) {
+                font-size: 40px;
+            }
+        }
+    }
+    .site--header__download{
+        padding-top: 55px;
+    }
+}

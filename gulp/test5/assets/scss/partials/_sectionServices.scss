@@ -1,0 +1,22 @@
+.section--services{
+    padding: 80px 0;
+    text-align: center;
+    .section--services__text{
+        p{
+            padding: 30px 0 80px 0;
+        }
+    }
+    .section--services__icons{
+        .section--services__icon{
+            padding: 0 20px;
+            i{
+                padding-bottom: 25px;
+            }
+            p{
+                padding-top: 25px;
+                color: rgb(148, 148, 148);
+                line-height: 1.5;
+            }
+        }
+    }
+}

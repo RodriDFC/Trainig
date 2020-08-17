@@ -1,0 +1,30 @@
+.section--skill{
+    background: url("../img/skills.png") center;
+    background-size: cover;
+    padding: 100px 0;
+    .section--skill__tittle{
+        text-align: center;
+    }
+    .section--skill__skills{
+        padding-top: 40px;
+        .section--skill__skill{
+            p{
+                color: white;
+                display: flex;
+                justify-content: center;
+            }
+            .skill{
+                margin-bottom: 30px;
+                @include skill(170px,170px);
+                border: 4px solid rgb(123, 108, 99);
+                .skill1{
+                    @include skill(150px,150px);
+                    border-top: none;
+                    border-right:4px solid white ;
+                    border-left:none ;
+                    border-bottom:4px solid white ;
+                }
+            }
+        }
+    }
+}

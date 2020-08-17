@@ -1,0 +1,53 @@
+@mixin hr() {
+  hr {
+    width: 70px;
+    height: 3px;
+    background: $base-color;
+  }
+}
+@mixin skill($width,$height) {
+  width: $width;
+  height: $height;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin twitter($url) {
+  padding: 0;
+  background: url($url) center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover .section--twitter__imgText{
+    opacity: 1;
+  }
+}
+@mixin twitterHover() {
+  width: 80%;
+  height: 80%;
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  h6{
+    @media (max-width: 768px) {
+      font-size: 10px;
+    }
+  }
+  hr{
+    width: 50px;
+    background: white;
+    margin:15px auto;
+    color:white;
+    border-bottom: 1px solid white;
+  }
+  p{
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    @media (max-width: 768px) {
+      font-size: 10px;
+    }
+  }
+}

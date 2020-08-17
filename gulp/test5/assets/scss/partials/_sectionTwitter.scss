@@ -1,0 +1,46 @@
+.section--twitter{
+    background: black;
+    .section--twitter__center{
+        text-align: center;
+        padding: 100px 0;
+        p{
+            padding: 25px;
+            color: $color-white;
+        }
+        span{
+            font-size: 15px;
+            color: dodgerblue;
+        }
+    }
+    .section--twitter__images{
+        margin: 0;
+        height: 350px;
+        @media (max-width: 768px) {
+            height: 200px;
+        }
+        .section--twitter__img1{
+            @include twitter("../img/twiter1.png");
+            .section--twitter__imgText{
+                @include twitterHover();
+            }
+        }
+        .section--twitter__img2{
+            @include twitter("../img/twiter2.png");
+            .section--twitter__imgText{
+                @include twitterHover();
+            }
+        }
+        .section--twitter__img3{
+            @include twitter("../img/twiter3.png");
+            .section--twitter__imgText{
+                @include twitterHover();
+            }
+        }
+        .section--twitter__img4{
+            @include twitter("../img/twiter4.png");
+            .section--twitter__imgText{
+                @include twitterHover();
+            }
+        }
+    }
+}
