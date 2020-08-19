@@ -1,0 +1,22 @@
+.hero{
+    background: url("../img/laptop.png") center;
+    background-size: cover;
+    padding: 280px 0 80px 0;
+    .hero--tittle{
+        padding-bottom: 25px;
+    }
+    .hero--text{
+        color: $color-white;
+        text-align: center;
+        padding-bottom: 400px;
+        @media(max-width: $tablet){
+            padding-bottom: 200px;
+        }
+    }
+    .hero--button{
+        a{
+            @include button($color-white);
+        }
+    }
+}
+

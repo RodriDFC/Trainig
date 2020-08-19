@@ -1,0 +1,23 @@
+.section--works{
+    .section--works__text{
+        text-align: center;
+        padding: 50px 0 90px 0;
+    }
+    .section--works__features{
+        .section--works__feature{
+            text-align: center;
+            img{
+                margin-bottom: 30px;
+            }
+            h5{
+                height: 36px;
+            }
+            hr{
+                color: $color-green;
+                width: 50px;
+                height: 3px;
+                background: $color-green;
+            }
+        }
+    }
+}

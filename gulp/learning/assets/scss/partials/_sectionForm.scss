@@ -1,0 +1,26 @@
+.section--form{
+    background: lightgray;
+    padding: 40px 0;
+    .section--form__text{
+        p{
+            padding-bottom: 25px;
+        }
+
+    }
+    .section--form__form{
+        form{
+            .form-group{
+                margin-bottom: 10px;
+            }
+            input{
+                border: none;
+                border-radius: 0;
+                padding: 15px;
+            }
+            .button{
+                @include button($color-tittle);
+            }
+        }
+
+    }
+}

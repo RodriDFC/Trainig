@@ -1,6 +1,6 @@
 /* Typographical Elements
 --------------------------------------------- */
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap');
 html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -11,12 +11,15 @@ body {
     color: $base-color;
     font-family: $font-family;
     font-size: $font-size;
-    font-weight: normal;
-    line-height: 1.625;
+    font-weight: 400;
+    line-height: 1.386;
     margin: 0;
     overflow-x: hidden;
 }
-
+.container{
+    max-width: $max-width;
+    padding: 50px;
+}
 button,
 input:focus,
 input[type="button"],
@@ -30,7 +33,7 @@ textarea:focus,
 
 a {
     color: #0073e5;
-    text-decoration: underline;
+    text-decoration: none;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     &:focus,
     &:hover {
@@ -40,7 +43,7 @@ a {
 }
 
 p {
-    margin: 0 0 30px;
+    margin: 0;
     padding: 0;
 }
 
@@ -57,9 +60,8 @@ li {
 hr {
     border: 0;
     border-collapse: collapse;
-    border-bottom: 1px solid $base-color;
+    border-bottom: 1px solid $color-green;
     clear: both;
-    color: $base-color;
     margin: 1.65em auto;
 }
 
@@ -94,31 +96,31 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Heebo', sans-serif;
-    font-weight: 400;
+    font-family: $font-heading;
+    font-weight: 700;
     line-height: 1.2;
-    margin: 0 0 20px;
+    margin: 0;
+    color: $color-tittle;
+    letter-spacing: 3px;
 }
 
 h1 {
     font-size: 30px;
+    color: $color-white;
+    letter-spacing: 4px;
 }
 
 h2 {
-    font-size: 27px;
+    font-size: 30px;
 }
 
 h3 {
-    font-size: 24px;
+  font-size: 23px;
 }
 
 h4 {
-    font-size: 20px;
-}
-
-.entry-content h3,
-.entry-content h4 {
-    font-weight: 600;
+    font-size: 23px;
+    letter-spacing: 0;
 }
 
 .entry-content h4 {
@@ -126,11 +128,14 @@ h4 {
 }
 
 h5 {
-    font-size: 18px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: $font-family;
 }
 
 h6 {
-    font-size: 16px;
+    font-size: 12px;
+    letter-spacing: 0;
 }
 
 

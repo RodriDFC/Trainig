@@ -1,0 +1,14 @@
+.section--brand{
+    .section--brand__img{
+        @include img(right,60px,0);
+    }
+    .section--brand__imgDer{
+        @include img(left,0,60px);
+    }
+    .section--brand__text{
+        @include textBrand(210px,60px);
+    }
+    .section--brand__textIz{
+        @include textBrand(60px,210px);
+    }
+}

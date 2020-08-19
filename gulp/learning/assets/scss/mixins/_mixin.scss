@@ -1,0 +1,31 @@
+@mixin img($dir,$right,$left) {
+  background: linear-gradient(to $dir,$color-green 55.48%, $color-tittle 73.52%);
+  img{
+    padding-top: 135px;
+    padding-right: $right;
+    padding-left: $left;
+    @media (max-width: $tablet) {
+      text-align: center;
+      padding: 90px 0;
+    }
+  }
+}
+@mixin textBrand($right,$left) {
+  min-width: 400px;
+  padding: 70px $right 70px $left;
+  background: lightgrey;
+  @media (max-width: $tablet) {
+    padding: 40px;
+    min-width: inherit;
+  }
+  p{
+    padding-bottom: 25px;
+  }
+}
+@mixin button($color) {
+  padding: 20px 30px;
+  border: 3px solid $color;
+  color: $color;
+  border-radius: 35px;
+  background: transparent;
+}

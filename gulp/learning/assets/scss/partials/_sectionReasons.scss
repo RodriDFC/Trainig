@@ -1,0 +1,22 @@
+.section--reasons{
+    padding: 70px 0;
+    .section--reasons__seven{
+        img{
+            width: 439px;
+            height: 631px;
+            @media (max-width: $tablet) {
+                width: 10vw;
+                height: 15vw;
+            }
+        }
+    }
+    .section--reasons__important{
+        h4{
+            padding-bottom: 30px;
+        }
+        p{
+            font-size: 12px;
+        }
+
+    }
+}

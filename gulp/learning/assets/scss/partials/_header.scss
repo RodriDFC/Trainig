@@ -1,25 +1,9 @@
 // Header
 .site--header {
     width: 100%;
-
+    position: absolute;
+    top: 40px;
     &__logo {
-        max-width: 212px;
-    }
-
-    .main--menu {
-        ul {
-            li {
-                display: inline-block;
-
-                a {
-                    text-decoration: none;
-                    font-family: "Gilroy";
-                    font-style: normal;
-                    font-weight: bold;
-                    font-size: $font-size;
-                    color: $color-white;
-                }
-            }
-        }
+        max-width: 240px;
     }
 }
