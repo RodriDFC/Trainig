@@ -1,19 +1,15 @@
 .section--digital{
-  padding: 7vw 0;
+  padding: 100px 0;
   text-align: center;
   .section--digital__text{
-      max-width: 660px;
       h4{
         margin-bottom: 3vw;
         letter-spacing: 3px;
       }
       p{
         font-size: 26px;
-        font-weight: lighter;
+        font-weight: 300;
         line-height: 1.571;
-      }
-      @media (max-width: 768px) {
-        max-width: 90%;
       }
   }
 }

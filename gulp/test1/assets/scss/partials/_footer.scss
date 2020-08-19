@@ -16,7 +16,9 @@
     .site--footer__social {
         a {
           height: 25px;
+          text-align: center;
           width: 25px;
+          display:inline-block;
           background: black;
           border-radius: 50%;
           color: $color-white;
@@ -32,9 +34,6 @@
         li{
           display: inline;
           padding-right: 2.5vw;
-          a{
-            text-decoration: none;
-          }
         }
       }
     }

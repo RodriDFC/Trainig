@@ -41,7 +41,7 @@
       line-height: 5.15vw;
     }
     span{
-      color: rgb(233, 132, 87);
+      color: $color-orange;
     }
 
     h4{
@@ -79,28 +79,18 @@
     }
   }
   .circle1{
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background: transparent;
-    position: absolute;
+    @include circle(48px,48px,3px,$color-orange);
     top: 4vw;
     right: 10vw;
-    border: 3px solid rgb(233, 132, 87);
     @media (max-width: 768px) {
         top: 47vw;
         right: 20vw;
     }
   }
   .circle{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: transparent;
-    position: absolute;
+    @include circle(100px,100px,9px,rgba(0,0,0,0.2));
     top: -4vw;
     right: 29vw;
-    border: 9px solid rgba(0,0,0,0.2);
     @media (max-width: 768px) {
         top: 5vw;
         left: 5vw;

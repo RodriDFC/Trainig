@@ -1,0 +1,17 @@
+@mixin circle($width,$height,$border,$color){
+  width: $width;
+  height: $height;
+  border-radius: 50%;
+  background: transparent;
+  position: absolute;
+  border: $border solid $color;
+}
+@mixin h2(){
+    font-size: $h2;
+    @media (max-width: 1500px) {
+      font-size: 70px;
+    }
+    @media(max-width: 900px){
+      font-size: 40px;
+    }
+}
