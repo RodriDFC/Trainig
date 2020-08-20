@@ -1,5 +1,5 @@
 .section--gallery{
-    padding: 80px 0;
+    padding: $padding-section;
     position: relative;
     .section--blog__sep{
         position: absolute;
@@ -28,23 +28,19 @@
         padding-bottom: 80px;
     }
     .section--gallery__spacing{
+        padding-bottom: 40px;
         .section--gallery__imgDerText{
-            padding: 40px 0 15px 20px !important;
+            padding: 0 30px 15px 18px !important;
             text-align: left;
-            @media (max-width:  992px) {
-                padding: 20px !important;
-            }
+            @include section--gallery__imgText();
         }
         .section--gallery__imgIzText{
-            padding: 40px 80px 15px 0 !important;
+            padding: 0 85px 15px 0 !important;
             @media (max-width: 1180px) {
-                padding: 40px 40px 15px 0 !important;
+                padding: 0 40px 15px 0 !important;
             }
             text-align: right;
-            @media (max-width:  992px) {
-                text-align: left;
-                padding: 20px !important;
-            }
+            @include section--gallery__imgText();
         }
     }
 }

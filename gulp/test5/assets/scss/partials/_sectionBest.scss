@@ -3,7 +3,7 @@
     padding-left: 30px;
     background: rgb(245, 245, 245);
     .section--best__text{
-        padding: 85px 0;
+        padding: $padding-section;
         height: 567px;
         @media (max-width: 992px) {
             height: inherit;

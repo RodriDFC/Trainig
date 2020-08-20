@@ -1,0 +1,48 @@
+.site--footer{
+    padding: $padding-section;
+    background: black;
+    .site--footer__mairala{
+        h2{
+            font-size: 47px;
+            font-family: $font-logo;
+        }
+        p{
+            padding-bottom: 30px;
+            font-size: $font-size-footer;
+            color: $color-footer;
+            line-height: 1.714;
+        }
+        span{
+            padding-top: 10px;
+            display: block;
+            color: $color-footer;
+            font-size: $font-size-footer;
+        }
+    }
+    .site--footer__social{
+        h5{
+            color: rgb(194, 194, 194);
+            padding-bottom: 25px;
+        }
+        h6 {
+            font-size: 10px;
+            color: rgb(95, 95, 95);
+            line-height: 2;
+            span{
+                color: $base-color;
+            }
+        }
+        p{
+            font-size: $font-size-footer;
+            color: $color-footer;
+            line-height: 1.786;
+        }
+        hr{
+            margin:20px auto;
+            background: rgba(0,0,0,0.5);
+        }
+    }
+    .site--footer__copyright{
+
+    }
+}

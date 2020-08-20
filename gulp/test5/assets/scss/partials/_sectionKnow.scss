@@ -1,6 +1,6 @@
 .section--Know{
     text-align: center;
-    padding: 90px 0;
+    padding: $padding-section;
     .section--Know__text{
         @include hr();
     }
