@@ -1,0 +1,19 @@
+.section--mission{
+    padding: 100px 0;
+    text-align: center;
+    .section--mission__gallery{
+          padding-top: 50px;
+         .section--mission__galleryText{
+            padding: 75px 60px;
+            text-align: left;
+            p{
+                padding-top: 25px;
+                line-height: 1.667;
+            }
+         }
+        .section--mission__galleryImg{
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}

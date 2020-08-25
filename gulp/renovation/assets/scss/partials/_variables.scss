@@ -11,17 +11,19 @@ $font-size: 16px;
 // ----------------------------------------------------------------------
 // Colors
 // ----------------------------------------------------------------------
-$body-bkg: #0f171f;
-$base-color: #E7F3FF;
-$link-color: #1780E4;
+$body-bkg: white;
+$base-color: black;
+$link-color: black;
 $color-white: #fff;
+$donate:rgb(238, 247, 251);
+$donate-border:rgb(48, 120, 190);
 
 // ----------------------------------------------------------------------
 // Font Families
 // ----------------------------------------------------------------------
-$font-family: Helvetica, Arial, sans-serif;
+$font-family: 'Gothic A1', sans-serif;;
 
-$font-heading: Helvetica, Arial, sans-serif;
+$font-heading: 'Gothic A1', sans-serif;;
 
 // ----------------------------------------------------------------------
 // Grid

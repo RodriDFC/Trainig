@@ -6,6 +6,9 @@
 // bootstrap
 @import "../../vendor/scss/bootstrap/bootstrap-reboot";
 @import "../../vendor/scss/bootstrap/bootstrap-grid";
+@import "../../vendor/scss/bootstrap/forms";
+@import "../../vendor/scss/bootstrap/navbar";
+@import "../../vendor/scss/bootstrap/transitions";
 
 // slick
 @import "../../vendor/scss/slick/slick";
@@ -31,7 +34,15 @@
 @import "partials/buttons";
 @import "partials/type";
 @import "partials/header";
-
+@import "partials/hero";
+@import "partials/sectionInformation";
+@import "partials/sectionSteps";
+@import "partials/sectionHistory";
+@import "partials/sectionMission";
+@import "partials/sectionVideo";
+@import "partials/siteNumbers";
+@import "partials/sectionTest";
+@import "partials/footer";
 // --------------------------------------------------
 // layout
 @import "layout/footer";

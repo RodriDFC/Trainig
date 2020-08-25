@@ -1,0 +1,12 @@
+.section--history{
+    padding: 180px 0;
+    background: url("../img/history.png");
+    background-size: cover;
+    text-align: center;
+    .section--history__text{
+        p{
+            padding-top: 45px;
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.section--video{
+   background: url("../img/video.png");
+   background-size: cover;
+   text-align: center;
+   padding: 140px 0 150px 0;
+    .section--video__text{
+       h3{
+          color: rgb(255, 255, 255);
+       }
+       p{
+          padding: 50px 0 70px 0;
+          color: rgb(255, 255, 255);
+       }
+       a{
+          display: block;
+          padding-bottom: 70px;
+       }
+       .button{
+          background: $donate-border;
+          color: white;
+          border: none;
+       }
+    }
+}

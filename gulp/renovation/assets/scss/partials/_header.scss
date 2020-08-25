@@ -1,23 +1,41 @@
 // Header
 .site--header {
     width: 100%;
-
+    padding: 25px 0;
+    text-align: center;
     &__logo {
-        max-width: 212px;
+        @media (max-width: $tablet) {
+            padding-bottom: 20px;
+        }
     }
-
-    .main--menu {
+    .site--header__search{
+        p{
+            padding: 0 25px 15px 25px;
+        }
+        i{
+            padding-right: 25px;
+        }
+        @media (max-width: $tablet) {
+            padding-bottom: 20px;
+        }
+    }
+    .site--header__join{
+        @media (max-width: $tablet) {
+            padding-bottom: 20px;
+        }
+    }
+    .site--header__menu{
         ul {
             li {
-                display: inline-block;
-
+                padding-right: 65px;
+                @media(max-width: 1150px){
+                    padding-right: 40px;
+                }
                 a {
-                    text-decoration: none;
-                    font-family: "Gilroy";
-                    font-style: normal;
-                    font-weight: bold;
-                    font-size: $font-size;
-                    color: $color-white;
+                    font-weight: 700;
+                    i{
+                        padding-left: 15px;
+                    }
                 }
             }
         }
