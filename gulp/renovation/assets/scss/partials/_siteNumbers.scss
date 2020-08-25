@@ -4,12 +4,20 @@
         padding-bottom: 50px;
         text-align: center;
     }
+    .site--numbers__numberSup{
+        p{
+            span{
+                position: relative;
+                bottom: 50px;
+            }
+        }
+    }
     .site--numbers__number{
         p{
             font-size: 105px;
             font-weight: 900;
             span{
-                font-size: 40px;
+                font-size: 35px;
             }
         }
     }
