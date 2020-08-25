@@ -1,10 +1,30 @@
 .section--test{
     padding: 150px 0;
-    background: url("../img/test_bg.png");
-    background-size: cover;
-    .section--test__kitchen{
-        .section--test__kitchenText{
-            padding: 20px 50px 0 50px;
+    @include background("../img/test_bg.png");
+    .section--test__kitchens{
+        .slick-prev {
+            left: 25px;
+            z-index: 2;
+        }
+        .slick-next {
+            right: 25px;
+        }
+        .slick-prev:before, .slick-next:before {
+            color: black !important;
+            font-size: 40px;
+        }
+        .section--test__kitchen{
+            display: flex;
+            .section--test__kitchenText{
+                h4{
+                    padding-bottom: 30px;
+                }
+                p{
+                    line-height: 1.875;
+                }
+                padding: 30px 100px 0 80px;
+                width: 466px;
+            }
         }
     }
 }

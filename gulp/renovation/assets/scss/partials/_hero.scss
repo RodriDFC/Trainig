@@ -1,9 +1,11 @@
 .hero{
-    background: url("../img/hero.png");
-    background-size: cover;
+    @include background("../img/hero.png");
     padding: 105px 0 280px 0;
     .hero--seen{
         padding: 25px 0 65px 0;
+        img{
+            vertical-align: inherit;
+        }
     }
     .hero--tittle{
         text-align: center;

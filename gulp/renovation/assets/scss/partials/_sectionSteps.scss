@@ -1,7 +1,6 @@
 .section--steps{
     padding: 105px 0;
-    background: url("../img/steps.png");
-    background-size: cover;
+    @include background("../img/steps.png");
     text-align: center;
     .section--steps__step{
         background: white;

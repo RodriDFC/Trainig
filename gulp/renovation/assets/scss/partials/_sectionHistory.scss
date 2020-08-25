@@ -1,7 +1,6 @@
 .section--history{
     padding: 180px 0;
-    background: url("../img/history.png");
-    background-size: cover;
+    @include background("../img/history.png");
     text-align: center;
     .section--history__text{
         p{

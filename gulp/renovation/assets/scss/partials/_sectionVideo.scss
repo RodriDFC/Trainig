@@ -1,6 +1,5 @@
 .section--video{
-   background: url("../img/video.png");
-   background-size: cover;
+   @include background("../img/video.png");
    text-align: center;
    padding: 140px 0 150px 0;
     .section--video__text{
