@@ -1,6 +1,6 @@
 /* Typographical Elements
 --------------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700;900&display=swap');
+@import url('https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css');
 html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -11,7 +11,7 @@ body {
     color: $base-color;
     font-family: $font-family;
     font-size: $font-size;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 1.625;
     margin: 0;
     overflow-x: hidden;
@@ -98,7 +98,7 @@ h4,
 h5,
 h6 {
     font-family: $font-heading;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.2;
     margin: 0;
     color: rgb(0, 0, 0);
