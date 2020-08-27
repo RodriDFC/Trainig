@@ -1,6 +1,6 @@
 /* Typographical Elements
 --------------------------------------------- */
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');
 html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -11,12 +11,18 @@ body {
     color: $base-color;
     font-family: $font-family;
     font-size: $font-size;
-    font-weight: normal;
+    font-weight: 400;
     line-height: 1.625;
     margin: 0;
     overflow-x: hidden;
 }
-
+.container{
+    max-width: $max-width;
+    padding: 0;
+    @media (max-width: $padCont) {
+        padding: 0 50px;
+    }
+}
 button,
 input:focus,
 input[type="button"],
@@ -30,7 +36,7 @@ textarea:focus,
 
 a {
     color: #0073e5;
-    text-decoration: underline;
+    text-decoration: none;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     &:focus,
     &:hover {
@@ -40,10 +46,12 @@ a {
 }
 
 p {
-    margin: 0 0 30px;
+    margin: 0 ;
     padding: 0;
 }
-
+span{
+    color: $color-blue;
+}
 ol,
 ul {
     margin: 0;
@@ -60,7 +68,7 @@ hr {
     border-bottom: 1px solid $base-color;
     clear: both;
     color: $base-color;
-    margin: 1.65em auto;
+    margin: 0 auto;
 }
 
 b,
@@ -94,18 +102,21 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Heebo', sans-serif;
-    font-weight: 400;
+    font-family: $font-heading;
+    font-weight: 500;
     line-height: 1.2;
-    margin: 0 0 20px;
+    margin: 0 ;
 }
 
 h1 {
-    font-size: 30px;
+    color: $color-white;
+    font-size: 64px;
+    font-weight: 700;
 }
 
 h2 {
-    font-size: 27px;
+    font-size: 40px;
+    color: rgb(35, 31, 32);
 }
 
 h3 {
@@ -113,7 +124,10 @@ h3 {
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 45px;
+    color: $color-white;
+    text-align: center;
+    padding-bottom: 60px;
 }
 
 .entry-content h3,
@@ -126,11 +140,13 @@ h4 {
 }
 
 h5 {
-    font-size: 18px;
+    font-size: 35px;
+    color: $color-white;
 }
 
 h6 {
-    font-size: 16px;
+    font-size: 20px;
+    color: rgb(13, 72, 108);
 }
 
 

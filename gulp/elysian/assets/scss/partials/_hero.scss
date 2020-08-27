@@ -1,0 +1,36 @@
+.site--hero{
+    background: url("../img/hero.png");
+    background-size: cover;
+    padding: 190px 0 0 0;
+    text-align: center;
+    &__tittle{
+        h1{
+            span{
+                font-weight: 700;
+                font-style: italic;
+                text-decoration: underline $color-blue;
+            }
+        }
+        p{
+            padding: 50px 0;
+            font-size: 30px;
+            color: $color-white;
+            line-height: 1.433;
+        }
+    }
+    &__char{
+        margin-top: 190px;
+        &1{
+            background: $color-hero1;
+            @include site--hero__char();
+        }
+        &2{
+            background: $color-hero2;
+            @include site--hero__char();
+        }
+        &3{
+            background: $color-hero3;
+            @include site--hero__char();
+        }
+    }
+}

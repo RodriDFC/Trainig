@@ -1,23 +1,22 @@
 // Header
-.site--header {
+.site--header{
     width: 100%;
-
+    padding: 20px 15px;
     &__logo {
-        max-width: 212px;
+        max-width: 250px;
     }
-
-    .main--menu {
+    &__menu {
         ul {
             li {
-                display: inline-block;
-
+                padding-right: 30px;
                 a {
-                    text-decoration: none;
-                    font-family: "Gilroy";
+                    position: relative;
+                    top: 15px;
+                    @media (max-width: $desktop) {
+                        top: 0;
+                    }
                     font-style: normal;
-                    font-weight: bold;
-                    font-size: $font-size;
-                    color: $color-white;
+                    color: rgb(35, 31, 32);
                 }
             }
         }
