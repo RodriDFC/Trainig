@@ -13,8 +13,28 @@
   ul{
     padding-top: 35px;
     li{
-      list-style-type:square;
       padding-bottom: 35px;
+      &:before {
+        content:'\25A0';
+        color: $color-blue;
+        padding-right: 10px;
+      }
     }
   }
+}
+@mixin slickArrow(){
+  .slick-prev:before {
+    color: $color-blue !important;
+    font-size: 30px;
+    content: "<";
+  }
+  .slick-next:before {
+    color: $color-blue !important;
+    font-size: 30px;
+    content: ">";
+  }
+}
+@mixin background($top,$right,$down,$left, $background){
+  background: $background;
+  padding: $top $right $down $left;
 }

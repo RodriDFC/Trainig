@@ -26,16 +26,18 @@
 }
 //section Goals
 .section--goals{
-    padding: 210px 0 75px 0;
-    background: $bg;
+    @include background(210px, 0, 75px, 0,$bg);
     text-align: center;
+    &__g{
+        @include slickArrow();
+    }
     &__goal {
+        outline: none;
         padding-top: 65px;
         &Tittle{
             width: 390px;
             hr{
                 margin-bottom: 20px;
-                border-bottom: 1px solid rgba($base-color,0.5);
             }
         }
         &Content{
@@ -85,8 +87,7 @@
 }
 //section--Solutions
 .section--Solutions{
-    padding: 70px 0;
-    background: $bg;
+    @include background(70px, 0, 70px, 0,$bg);
     text-align: center;
     h2{
         padding-bottom: 120px;
@@ -139,8 +140,7 @@
 }
 //section--Work
 .section--Work{
-    background: $bg;
-    padding: 120px 0;
+    @include background(120px, 0, 120px, 0, $bg);
     &__img{
         position:relative;
         left: 70px;
@@ -155,6 +155,7 @@
     &__text{
         position:relative;
         right: 100px;
+        bottom: 60px;
         text-align: right;
         p{
             padding-top: 30px;
@@ -162,10 +163,7 @@
     }
     &__partner{
         padding-top: 70px;
-        .slick-prev:before, .slick-next:before {
-            color: $color-blue !important;
-            font-size: 30px;
-        }
+        @include slickArrow();
         &s{
             outline:none;
             margin-right: 80px;
@@ -183,6 +181,7 @@
         &__text{
             padding-bottom: 20px;
             right: 0;
+            bottom: 0;
             text-align: left;
         }
     }
@@ -200,7 +199,7 @@
         margin-right: auto;
         left: 0;
         right: 0;
-        bottom:0;
+        bottom:-25px;
         text-align: center;
     }
     &__img{
@@ -215,8 +214,7 @@
 }
 //section--profit
 .section--profit{
-    padding: 160px 0 220px 0;
-    background: $bg;
+    @include background(160px, 0, 220px, 0, $bg);
     &__text{
         p{
             padding-top: 35px;
@@ -235,8 +233,7 @@
     &__pos{
         position: relative;
         bottom: 100px;
-        padding: 90px 0 0 0;
-        background: $color-white;
+        @include background(90px, 0, 0, 0, $color-white);
     }
     &__tittle{
         text-align: center;
@@ -258,8 +255,7 @@
 }
 //section--footer
 .section--footer{
-    background: $color-blue;
-    padding: 65px 0;
+    @include background(65px, 0, 65px, 0, $color-blue);
     &__links{
         ul{
             li{
