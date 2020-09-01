@@ -6,3 +6,11 @@
   border-radius: 50%;
   display: none;
 }
+@mixin card($width,$height,$padTB,$padLR,$bg){
+  outline: none;
+  margin-right: 35px;
+  width: $width;
+  height: $height;
+  padding: $padTB $padLR;
+  background: $bg;
+}
