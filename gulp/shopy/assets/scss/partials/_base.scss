@@ -1,6 +1,6 @@
 /* Typographical Elements
 --------------------------------------------- */
-
+@import url('../fonts/stylesheet.css');
 html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -16,7 +16,12 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
-
+.container{
+    max-width: $max-width;
+    @media (max-width: $tablet) {
+        padding: 50px;
+    }
+}
 button,
 input:focus,
 input[type="button"],
@@ -29,18 +34,18 @@ textarea:focus,
 }
 
 a {
-    color: #0073e5;
-    text-decoration: underline;
+    color: $link-color;
+    text-decoration: none;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     &:focus,
     &:hover {
-        color: #333;
+        color: $color-orange;
         text-decoration: none;
     }
 }
 
 p {
-    margin: 0 0 30px;
+    margin: 0;
     padding: 0;
 }
 
@@ -60,7 +65,7 @@ hr {
     border-bottom: 1px solid $base-color;
     clear: both;
     color: $base-color;
-    margin: 1.65em auto;
+    margin: 28px auto;
 }
 
 b,
@@ -94,26 +99,30 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Heebo', sans-serif;
-    font-weight: 400;
+    font-family: $font-heading;
+    font-weight: 900;
     line-height: 1.2;
-    margin: 0 0 20px;
+    margin: 0;
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 52px;
+    color: $color-orange;
 }
 
 h2 {
-    font-size: 27px;
+    font-size: 36px;
+    padding-bottom: 30px;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 22px;
 }
 
 h4 {
     font-size: 20px;
+    color:$color-orange;
+    font-weight: 700;
 }
 
 .entry-content h3,
@@ -127,10 +136,15 @@ h4 {
 
 h5 {
     font-size: 18px;
+    padding: 30px 0;
+    font-weight: 700;
 }
 
 h6 {
-    font-size: 16px;
+    padding-top: 20px;
+    font-size: 18px;
+    color: $title-color;
+    font-weight: 600;
 }
 
 

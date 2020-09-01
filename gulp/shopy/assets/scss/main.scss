@@ -6,6 +6,9 @@
 // bootstrap
 @import "../../vendor/scss/bootstrap/bootstrap-reboot";
 @import "../../vendor/scss/bootstrap/bootstrap-grid";
+@import "../../vendor/scss/bootstrap/forms";
+@import "../../vendor/scss/bootstrap/navbar";
+@import "../../vendor/scss/bootstrap/transitions";
 
 // slick
 @import "../../vendor/scss/slick/slick";
@@ -18,7 +21,7 @@
 // mixins
 @import "mixins/fonts";
 @import "mixins/helpers";
-
+@import "mixins/mixin";
 // @import 'components/functions';
 // --------------------------------------------------
 // partials
@@ -31,7 +34,7 @@
 @import "partials/buttons";
 @import "partials/type";
 @import "partials/header";
-
+@import "partials/hero";
 // --------------------------------------------------
 // layout
 @import "layout/footer";

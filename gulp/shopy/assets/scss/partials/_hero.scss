@@ -1,0 +1,21 @@
+.section--hero{
+    padding: 230px 0;
+    background-image: url("../img/hero.png");
+    background-size: cover;
+    &__tittle{
+        p{
+            padding: 15px 0 55px 0;
+        }
+        span{
+            font-weight: 600;
+            font-size: 18px;
+            padding-right: 25px;
+        }
+        a{
+            color: $color-orange;
+            i{
+                padding-right: 10px;
+            }
+        }
+    }
+}
