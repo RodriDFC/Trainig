@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $('.section--Arrivals__product').slick({
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 300,
         variableWidth: true,
@@ -25,7 +25,7 @@ $(document).ready(function () {
         ]
     });
     $('.section--best__sale').slick({
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 300,
         variableWidth: true,

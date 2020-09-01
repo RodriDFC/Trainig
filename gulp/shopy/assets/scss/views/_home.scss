@@ -9,16 +9,16 @@
         padding-bottom: 80px;
         &s{
             .circle1{
-                @include circle($color-red);
+                @include circle(13px,13px,$color-red,none);
             }
             .circle2{
-                @include circle($color-black);
+                @include circle(13px,13px,$color-black,none);
             }
             .circle3{
-                @include circle($color-blue);
+                @include circle(13px,13px,$color-blue,none);
             }
             .circle4{
-                 @include circle($color-green);
+                 @include circle(13px,13px,$color-green,none);
             }
             @include card(270px,383px,30px,45px,$color-white);
             text-align: center;
