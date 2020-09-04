@@ -7,6 +7,7 @@
     }
     &__product{
         padding-bottom: 80px;
+        @include slickArrow();
         &s{
             .circle1{
                 @include circle(13px,13px,$color-red,none);
@@ -73,7 +74,7 @@
             font-size: 12px;
         }
         span{
-            font-size: 22px;
+            font-size: 23px;
             color: $color-orange;
             font-weight: 900;
             i{
@@ -105,6 +106,7 @@
 .section--best{
     padding: 60px 0 120px 0;
     &__sale{
+        @include slickArrow();
         &s{
             @include card(371px,160px,30px,0px,$color-white);
             h5{
@@ -157,7 +159,7 @@
         form{
             input{
                 border: none;
-                padding: 28px 10px 28px 35px;
+                padding: 28px 10px 28px 38px;
             }
         }
     }

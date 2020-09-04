@@ -153,7 +153,11 @@ h6 {
 
 /* Objects
 --------------------------------------------- */
-
+.active{
+    a{
+        color: $color-orange;
+    }
+}
 embed,
 iframe,
 img,

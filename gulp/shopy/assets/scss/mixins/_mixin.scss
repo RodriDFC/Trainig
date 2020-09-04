@@ -14,3 +14,15 @@
   padding: $padTB $padLR;
   background: $bg;
 }
+@mixin slickArrow(){
+  .slick-prev:before {
+    color: $base-color !important;
+    font-size: 30px;
+    content: "<";
+  }
+  .slick-next:before {
+    color: $base-color !important;
+    font-size: 30px;
+    content: ">";
+  }
+}
